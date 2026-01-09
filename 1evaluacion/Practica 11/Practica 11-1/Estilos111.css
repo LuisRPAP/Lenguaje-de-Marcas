@@ -1,0 +1,27 @@
+
+
+h1 {
+    margin-top: 25px;
+    font-size: 300%;
+    color: blue;
+    padding: 5px;
+    text-align: center;
+
+    border-radius: 10px;
+    border: 10px double green;
+
+}
+img{
+    border: 2px solid green;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 10px;
+    box-shadow: 0px 0px 60px #FFFF99;
+    
+}
+
+body{
+    background-color: black;
+}

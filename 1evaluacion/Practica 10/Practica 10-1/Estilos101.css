@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url(recursos/Comfortaa-Regular.ttf);
+}
+
+@font-face {
+    font-family: bybsy;
+    src: url(recursos/bybsy-regular-webfont.ttf);
+}
+
+h1 {
+    font-family: bybsy;
+    font-size: 300%;
+    font-variant: small-caps;
+    letter-spacing: 5px;
+
+    text-decoration: overline underline;
+    text-shadow: red 2px 2px 4px;
+
+    background-image: url('recursos/fondo.png');
+    background-repeat: repeat;
+
+    color: black;
+
+    
+
+
+}
+h1:hover{
+    cursor: grab;
+}
+
+p {
+    font-family: Comfortaa;
+    text-indent: 2.5em;
+    color: rgb(0,0,255);
+    
+
+}
+
+#p1 {
+    font-size: 110%;
+    font-weight: bold;
+    word-spacing: 1.5em;
+
+
+}
+
+#p2 {
+    font-size: 90%;
+    font-style: italic;
+    line-height: 3em;
+    text-transform: capitalize;
+    opacity: 0.7;
+}
+
+div {
+    margin: auto;
+    width: 40%;
+    height: 40%;
+    border: 2px solid black;
+    padding: 4em;
+    background-image: url('recursos/Vicente_Blasco_Ibanez.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+}
+
+.frase {
+    font-style: normal;
+    text-transform: none;
+    text-decoration: line-through;
+    background-color: yellow;
+}
+
+.t1 {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Luis Rodriguez Palacios Practica 11-1</title>
+    <link rel="stylesheet" href="estilos/Estilos120.css" type="text/css" media="all">
+
+
+</head>
+
+<body>
+    <h1>
+        Datos personales
+    </h1>
+    <form>
+        <br/>Nombre:     <input type="text" name="nombre"/>
+        <br/>
+        <br/>Apellidos:  <input type="text" name="apellidos"/>
+        <br/>
+        <br/>Telefono:   <input type="text" name="telefono"/>
+        <br/>
+        <br/><input type="submit" value="Enviar"/>
+
+        
+    </form>
+
+    <form>
+        <h1>
+            Asignatura favorita
+        </h1>
+        <br/><input type="radio" name="Asignatura" value="POO">Programacion
+        <br/>
+        <br/><input type="radio" name="Asignatura" value="LM">lenguaje de Marcas
+        <br/>
+        <br/><input type="radio" name="Asignatura" value="BD">Base de Datos
+        <br/>
+        <br/><input type="submit"value="Enviar">
+    </form>
+
+    <form>
+        <h1>
+            Libros leidos
+        </h1>
+        <br/><input type="checkbox" name="Libros" value="elHobbit">El Hobbit
+        <br/>
+        <br/><input type="checkbox" name="Libros" value="laLadronaDeLibros">La Ladrona de libros
+        <br/>
+        <br/><input type="checkbox" name="Libros" value="elMedico">El Medico
+        <br/>
+        <br/><input type="checkbox" name="Libros" value="elEscarabajoDeOro">El escarabajo de oro
+        <br/><input type="submit" value="Enviar">
+    </form>
+    <form name="miCorreo" action="mailto:antoniop@iteite.es" method="post" enctype="text/plain">
+        <h1>
+            Libros leidos
+        </h1>
+        <br/><input type="checkbox" name="Libros" value="elHobbit">El Hobbit
+        <br/>
+        <br/><input type="checkbox" name="Libros" value="laLadronaDeLibros">La Ladrona de libros
+        <br/>
+        <br/><input type="checkbox" name="Libros" value="elMedico">El Medico
+        <br/>
+        <br/><input type="checkbox" name="Libros" value="elEscarabajoDeOro">El escarabajo de oro
+        <br/><input type="submit" value="Enviar" >
+        <input type="reset" value="Borrar">
+        <input type="button" value="Consulta" onclick="JavaScript:window.location='http://www.todostuslibros.com'">
+    </form>
+    <form name="miCorreo" action="mailto:antoniop@iteite.es" method="post" enctype="text/plain">
+        <h1>
+            Preferencias
+        </h1>
+        <select>
+            <option value="prog">Programacion</option>
+            <br/>
+            <option value="ldm">Lenguaje de marcas</option>
+            <br/>
+            <option value="bd">Bases de Datos</option>
+            <br/>
+            <option value="fol">F.O.L.</option>
+        </select>
+        <br/>
+        <select>
+            <optgroup label="Deportes">
+                <option value="fut">Futbol</option>
+                <br/>
+                <option value="ten">Tenis</option>
+                <br/>
+                <option value="Cor">Correr</option>
+            </optgroup>
+            <optgroup label="Diversion">
+                <option value="dis">Discoteca</option>
+                <br/>
+                <option value="Cin">Cine</option>
+            </optgroup>            
+            
+        </select>       
+       
+        <br/><input type="submit" value="Enviar" >
+       
+    </form>
+        <h1>
+        Formulario
+    </h1>
+    <form>
+        <fieldset style="width: 350px;">
+            <legend>Datos personales</legend>
+                <br/>Nombre:     <input type="text" name="nombre" />
+                <br/>
+                <br/>Comentarios:  <textarea name="Comentarios" cols="60" rows="5"></textarea>
+        </fieldset>
+        
+    </form>
+
+
+</body>
+
+</html>

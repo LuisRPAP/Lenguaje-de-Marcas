@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Luis Rodriguez Palacios Practica 11-1</title>
+    <link rel="stylesheet" href="estilos/Estilos123.css" type="text/css" media="all">
+
+    <script language="JavaScript">
+        function enfocado(id_objeto) {
+            if(id_objeto=="nom"){
+            document.getElementById(id_objeto).style.backgroundColor="yellow";
+            }
+            if(id_objeto=="obs"){
+            document.getElementById(id_objeto).style.backgroundColor="red";
+            }
+        }
+
+        function desenfocado(id_objeto) {
+            
+            document.getElementById(id_objeto).style.backgroundColor="white";
+        }
+        function resetea(){
+            alert('Se van a borrar los datos');
+        }
+ 
+    </script>
+
+</head>
+
+<body onload="JavaScript:alert('Perfecto. La página ya se ha cargado.');">
+
+    <form>
+    <h1>
+        Bienvenido
+    </h1>
+
+
+    <div class="campos">
+        <label for="nombre">Nombre:</label>
+        <input class="Dp" id="nom" type="text" name="nombre" placeholder="Nombre" onfocus="JavaScript:enfocado(this.id);" onblur="JavaScript:desenfocado
+(this.id);"/>
+    </div>
+    </br>
+    <div class="campos">
+        <label for="Observaciones">Direccion:</label>
+        <input class="Dp" id="obs" type="text" name="obs" placeholder="Observaciones" onfocus="JavaScript:enfocado(this.id);" onblur="JavaScript:desenfocado
+(this.id);" />
+    </div>
+    <br/>
+    <input id="anul" type="reset" value="Resetear" onclick="JavaScript:resetea()"/>
+
+
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>

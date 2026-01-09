@@ -1,0 +1,48 @@
+
+
+table th,
+table td {
+    padding: 5px;
+}
+
+th {
+    background-color: rgb(139, 57, 10);
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 30px;
+    size: 20px;
+}
+
+.lateral {
+    background-color: rgb(228, 223, 223);
+}
+
+td {
+    width: 150px;
+    text-align: center;
+    border: 1px solid;
+}
+
+.banderas {
+    width: 60px;
+}
+
+.numeros {
+    color: blue;
+}
+
+.Capital {
+    font-style: verdana;
+    font-size: 10px;
+}
+tfoot {
+    
+    color: rgba(160, 3, 3, 0.788);
+    font-size: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+tfoot, tfoot tr, tfoot td {
+    border: none !important;
+    background: none !important;
+}

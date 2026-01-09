@@ -1,0 +1,28 @@
+
+h2{
+    color: blue;
+    font-family: Tahoma ;
+}
+p{
+    text-align: justify;
+    line-height: 1.5;
+    width: 600px;
+
+}
+.gugol{
+    font-weight: bold;
+    background-color: yellow;
+}
+.autor{
+    color: green;
+}
+.especial{
+    text-decoration: underline;
+    font-variant: small-caps;
+}
+.libro{
+    color: firebrick;
+}
+sup{
+    font-size: 70%;
+}

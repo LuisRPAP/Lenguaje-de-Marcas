@@ -1,0 +1,23 @@
+<style>
+        h1 {
+            color: rgba(160, 3, 3, 0.788);
+            size: 30px;
+            padding-bottom: 20px;
+        }
+        th {
+            background-color: rgb(135, 245, 245);
+            font-weight: bold;
+            size: 20px;
+        }
+        .lateral {
+            background-color: rgb(228, 223, 223);
+        }
+        td {
+            width: 100px;
+            text-align: center;
+            border: 1px solid;
+        }
+        .banderas{
+            width: 40px;
+        }
+    </style>

@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Andalus;
+    src: url(Fuentes/Andalus.ttf);
+}
+.contenido{
+    margin: auto;
+    text-align: justify;
+    width: 600px;
+    background-color: rgb(178, 243, 243);
+    color: blue;
+}
+h1{
+    margin: auto;
+    font-size: 44px;
+    text-align: center; 
+    background-color:aqua;   
+    width: 600px;
+    border: 1px solid blue;
+    color:brown;
+}
+h2{
+    margin: auto;
+    color: blue;
+    font-family: Tahoma ;
+    text-align: left;
+}
+p{
+    margin: auto;
+    text-align: justify;
+    line-height: 1.5;
+    width: 600px;
+    font-style: italic;
+}
+.gugol{
+    font-family: Andalus;
+    font-weight: bold;
+    
+}
+.autor{
+    color:black;
+}
+.especial{
+    text-decoration: underline;
+    font-variant: small-caps;
+}
+.especial:hover{
+    color: red;
+}
+.libro{
+    color: firebrick;
+}
+sup{
+    font-size: 8px;
+}
+.trozos{
+    column-count: 3;
+    column-gap: 30px;
+}

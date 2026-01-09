@@ -1,0 +1,41 @@
+#div0 {}
+
+#div05 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+
+fieldset{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#div1,
+#div2,
+#div3 {
+    flex: 1;
+    padding: 10px;
+}
+h1,h2{
+    text-align: center;
+}
+h2 {
+    font-style: italic;
+}
+input{
+    margin: auto;
+}
+#botones{
+    text-align: center;
+    margin-top: 20px;
+}
+body {
+    font-family: Verdana;
+}
+legend {
+    opacity: 0.5;
+    font-size: 1.2em; 
+}

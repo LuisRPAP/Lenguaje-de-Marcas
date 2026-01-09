@@ -1,0 +1,39 @@
+
+table{
+    border: 2px solid black;
+    margin: auto;
+}
+
+img{
+    width: 25%;
+    height: 25%;
+}
+caption{
+
+    text-align: center;
+}
+tr{
+    width:max-content; 
+    
+
+}
+td{
+    border: 2px solid black;
+   
+    text-align: center;
+}
+thead{
+
+    background-color:aquamarine;
+    color: blue;
+}
+.non{
+    background-color: rgb(223, 216, 216);
+}
+div{
+
+    text-align: center;
+}
+.nom:hover{
+    color: blue;
+}

@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Andalus;
+    src: url(Fuentes/Andalus.ttf);
+}
+
+@font-face {
+    font-family: Vitor;
+    src: url(Fuentes/vitor.ttf);
+}
+
+.contenido {
+    margin: auto;
+    text-align: justify;
+    width: 38em;
+    background-color: rgb(178, 243, 243);
+    color: blue;
+}
+
+h1 {
+    margin: auto;
+    font-size: 4em;
+    text-align: center;
+    background-color: aqua;
+    width: 9em;
+    border: .05em solid blue;
+    color: brown;
+    text-shadow: blue 3px 3px 5px;
+    background-image: url("recursos/fondo.png");
+    
+}
+
+h2 {
+    margin: auto;
+    color: blue;
+    font-family: Tahoma;
+    text-align: left;
+    padding: 0.5em;
+}
+
+p {
+    margin: auto;
+    text-align: justify;
+    line-height: 1.5;
+    width: 36em;
+    font-style: italic;
+    text-indent: 2em;
+    line-height: 1.5em;
+
+
+}
+
+.gugol {
+    font-family: Andalus;
+    font-weight: bold;
+
+}
+.gugol:hover{
+    cursor:pointer ;
+}
+
+.especial {
+    font-family: Vitor;
+
+}
+
+.autor {
+    color: black;
+}
+.autor:hover{
+    cursor: none;
+}
+
+.especial {
+    text-decoration: underline;
+    font-variant: small-caps;
+}
+
+.especial:hover {
+    color: red;
+}
+
+.libro {
+    color: firebrick;
+    font-variant: small-caps;
+}
+
+sup {
+    font-size: 0.5em;
+}
+
+.trozos {
+    column-count: 3;
+    column-gap: 1em;
+    word-spacing: 1.1em;
+    text-align: left;
+    opacity: 50%;
+    /*background-color: rgb(90%,100%,100%);*/
+    /*background-color: rgb(229.5,255,255);*/
+    background-color: #E6FFFF;
+}
+
+div {
+    background-image: url('recursos/etching-small.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*para la foto centrada y abajo
+    background-position: bottom;*/
+    background-position: center;
+
+}
+.anyo{
+    text-decoration: line-through;
+}

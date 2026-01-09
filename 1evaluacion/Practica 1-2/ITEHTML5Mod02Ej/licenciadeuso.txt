@@ -1,0 +1,5 @@
+Licencia de uso
+
+Los ejemplos y ejercicios son propiedad del Instituto de Tecnologías Educativas. Ministerio de Educación y se distribuyen bajo una licencia de Creative Commons Reconocimiento-NoComercial-CompartirIgual 3.0 España.
+
+El material gráfico es propiedad de Antonio Paniagua Navarro y se distribuye bajo una licencia de Creative Commons Reconocimiento-NoComercial-CompartirIgual 3.0 España.

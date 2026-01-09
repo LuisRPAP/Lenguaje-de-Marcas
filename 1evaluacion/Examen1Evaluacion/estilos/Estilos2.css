@@ -1,0 +1,29 @@
+.imgTabla{
+    width: 20%;
+}
+table{
+    border: 2px solid black;
+}
+td{
+    border: 2px solid black;
+}
+th{
+    background-color: aqua;
+    color: blue;
+    border: 2px solid black;
+    text-align: center;
+    vertical-align:baseline;
+    width: 20px;
+}
+.texto{
+    width: 200px;
+}
+caption{
+    font-size: 300%;
+    color: brown;
+    width: 400px;
+    margin: auto;
+}
+.non{
+    background-color: rgb(206, 205, 205);
+}

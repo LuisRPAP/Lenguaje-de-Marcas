@@ -1,0 +1,26 @@
+.contenedor{
+    background-color: white;
+    
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.botones{
+    background-color: blue;
+    color: white;
+    width: 120px;
+    height: 70px;
+    margin: 20px;
+    border-radius: 10%;
+    display: inline-block;
+    text-align: center;
+}
+.bombilla{
+    margin: auto;
+    width: fit-content;
+}
+#b6{
+    visibility: hidden;
+}
+

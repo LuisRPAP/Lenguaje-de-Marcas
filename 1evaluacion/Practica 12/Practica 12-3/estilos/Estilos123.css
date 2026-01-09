@@ -1,0 +1,18 @@
+
+h1{
+    margin-left: 100px;
+}
+label{
+    margin-left: 100px;
+}
+#nom{
+    width: 300px;
+    margin-left: 22px;
+}
+#obs{
+    width: 600px;
+    margin-left: 10px;
+}
+input{
+    margin-left: 100px;
+}

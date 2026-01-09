@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Luis Rodriguez Palacios Practica_6-2</title>
+  <style>
+    #encabezado1 {
+
+      border: 2px solid rgb(255, 0, 0);
+      background-color: rgb(218, 216, 216);
+      margin-top: 10px;
+      margin-left: 10px;
+      font-size: 200%;
+      font-weight: bold;
+      text-align: center;
+
+
+
+    }
+
+    #parrafo1 {
+      position: relative;
+      margin-top: 15px;
+      margin-left: 10px;
+      background-color: rgb(218, 216, 216);
+
+
+
+    }
+
+    #enlaceRelativo {
+      border: 2px solid rgb(21, 255, 0);
+      position: relative;
+      margin-top: 15px;
+      margin-left: 150px;
+      margin-bottom: 15px;
+      width: fit-content;
+
+    }
+
+    .divEstatico {
+      position: relative;
+      border: 2px solid rgb(4, 60, 245);
+      width: 50%;
+      margin-left: 15px;
+    }
+
+    #divRelativo {
+      position: relative;
+      border: 2px solid rgb(237, 4, 245);
+      margin-top: 20px;
+      margin-left: 0px;
+      margin-right: 20px;
+    }
+
+    #divAbsoluto {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border: 2px solid greenyellow;
+      background-color: grey;
+
+    }
+
+    .parrafo {
+      background-color: grey;
+      text-align: justify;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 20px;
+      margin-right: 20px;
+
+    }
+
+    #sticky {
+
+      border: 2px solid rgb(3, 3, 3);
+      background-color: grey;
+      color: gainsboro;
+      width: fit-content;
+      position: sticky;
+      width: 200px;
+      margin-top: 400px;
+    }
+
+    #divCentrado {
+
+      border: 2px solid rgb(85, 86, 87);
+      background-color: rgb(240, 238, 238);
+      color: rgb(7, 155, 241);
+      width: fit-content;
+      position: relative;
+      width: 300px;
+      height: 200px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      margin: auto;
+      margin-top: -210px;
+
+    }
+
+    #divFijo {
+      border: 2px solid rgb(8, 235, 243);
+      width: fit-content;
+      position: relative;
+      width: 100px;
+      margin-left: 1600px;
+      margin-top: -45px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <div id="encabezado1">
+    Encabezado 1 (estático, margen 10px)
+  </div>
+
+  <div id="parrafo1">
+    <p>
+      Párrafo <a href="Enlaces/ENLACE_ESTATICO_1.HTML">Enlace Estatico</a> <a
+        href="Enlaces/ENLACE_ESTATICO_2.HTML">Enlace Estático</a>
+    </p>
+
+  </div>
+  <div id="enlaceRelativo">
+    <a href="Enlaces/ENLACE_RELATIVO_SEPARADO.HTML">Enlace relativo </a>separado 150px y 15px
+
+  </div>
+  <div class="divEstatico">
+    Div estático 50% ancho de página
+  </div>
+  <div class="divEstatico">
+    Div estático 50% ancho de página
+  </div>
+  <div id="divRelativo">
+    <p>Div relativo. Se separa 20px en horizonal y vertical. Div relativo. Se separa 20px en horizonal y vertical. Div
+      relativo. Se separa 20px en horizonal y vertical. Div relativo. Se separa 20px en horizonal y vertical. Div
+      relativo. Se separa 20px en horizonal y vertical. Div relativo. Se separa 20px en horizonal y vertical. Div
+      relativo. Se separa 20px en horizonal y vertical. Div relativo. Se separa 20px en horizonal y vertical. Div
+      relativo. Se separa 20px en horizonal y vertical. Div relativo. Se separa 20px en horizonal y vertical. Div
+      relativo. Se separa 20px en horizonal y vertical. Div relativo. Se separa 20px en horizonal y vertical. Div
+      relativo. Se separa 20px en horizonal y vertical. Div relativo. Se separa 20px en horizonal y vertical. Div
+      relativo. Se separa 20px en horizonal y vertical.
+    <div id="divAbsoluto">
+      Div absoluto en la esquina inferio derecha del div relativo
+    </div>
+    </p>
+  </div>
+
+  <div class="parrafo">
+    Isaac Asimov dijo en una ocasión al respecto: "Tendremos que padecer eternamente un número inventado por un bebé".
+  </div>
+  <div class="parrafo">
+    El gógol no es de particular importancia en las matemáticas y tampoco tiene usos prácticos. Kasner lo creó para
+    ilustrar la diferencia entre un número inimaginablemente grande y el infinito, y a veces es usado de esta manera en
+    la enseñanza de las matemáticas.
+
+  </div>
+  <div class="parrafo">
+    Cuando fue nombrado en 1938, el gógol era indudablemente grande, y desde un punto de vista físico, un gógol es mayor
+    que el número de átomos de hidrógeno en el Universo conocido. Sin embargo, con la invención de computadoras y
+    algoritmos rápidos, el cálculo de números del tamaño de un gógol se ha convertido en rutina. Por ejemplo, incluso el
+    difícil problema de la factorización en números primos es ahora sencillo para 100 cifras.
+  </div>
+  <div class="parrafo">
+    El número más grande que puede ser representado en la mayoría de calculadoras de bolsillo o científicas es poco
+    menos que un gógol:
+    9,9999999 E+99 = 9,9999999 x 10<sup>99</sup> = 0,99999999 gógol.
+    Pero hay que considerar que muchas calculadoras que representan estos números solamente utilizan entre 10 a 30
+    dígitos significativos. Sin embargo, algunos modelos de calculadora permiten exponentes mayores que 99.
+  </div>
+  <div id="sticky">
+    Div sticky 200px ancho
+  </div>
+  <div id="divCentrado">
+    Div 300 px centrado vertical y dcha.
+  </div>
+  <div id="divFijo">
+    Div fijo 100px ancho
+  </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Aniron;
+    src: url("../tipos_de_letra/Aniron.ttf");
+}
+
+@-webkit-keyframes tit {
+    0% {}
+
+    50% {
+        translate: 300px;
+    }
+
+    100% {}
+
+}
+
+h1 {
+
+
+    font-family: Aniron;
+    font-size: 3em;
+
+    color: orange;
+    text-align: center;
+    width: 25%;
+    margin: auto;
+
+}
+
+
+
+
+div {
+    position: relative;
+    border: 2px solid black;
+
+    background-color: grey;
+
+}
+
+#foto {
+    float: left;
+    margin: 1em;
+    border: 2px solid black;
+    padding: 5px;
+    box-shadow: 8px 6px 7px greenyellow;
+}
+
+#nombre:hover {
+    border: 2px solid black;
+    background-color: yellow;
+}
+
+p {
+
+    font-family: Aniron;
+    color: blue;
+    margin-left: 1em;
+    word-spacing: 1.5px;
+
+}
+
+#pie {
+    font-family: Segeo Print, Verdana;
+    font-size: 0.9em;
+    color: red;
+}

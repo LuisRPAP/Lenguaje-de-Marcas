@@ -1,0 +1,82 @@
+
+
+#div1{
+    margin-right: 200px;
+}
+
+#div2{
+    border: 3px solid black;
+    border-radius: 10px 10px 10px 10px;
+    margin-right: 100px;
+}
+#div3{
+    border: 3px solid black;
+    border-radius: 10px 10px 10px 10px;
+    margin-right: 600px;
+}
+#div5 {
+    display: flex;
+    
+
+
+}
+
+fieldset{
+
+   
+    background-color: beige;
+    margin-top: 40px;
+   
+
+   
+}  
+legend{
+    color: blue;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#div1,
+#div2,
+#div3 {
+    flex: 1;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    font-family: 'Segoe Print';
+    font-size: 3em;
+    padding-bottom: 3px;
+}
+h2 {
+    font-style: italic;
+}
+.Dp{
+    margin: auto;
+    background-color: yellow;
+}
+.campos{
+    margin-bottom: 15px;
+}
+.campos label{
+    display: inline-block;
+
+    margin-right: 10px;
+    text-align: right;
+}
+.campos input{
+    flex: 1;
+    padding: 5px;
+}
+#botones{
+    text-align: center;
+    margin-top: 50px;
+
+}
+#conf{
+    margin-left: -10em;
+    margin-right: 200px;
+}
+body {
+    font-family: Verdana;
+    background-color: lightblue;
+}

@@ -1,0 +1,32 @@
+h1 {
+    color: crimson;
+    background-color: chocolate;
+    border: 3px solid green;
+    text-align: center;
+
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-align: justify;
+    line-height: 2;
+}
+.nombre{
+    color: green;
+}
+
+a{
+    color: green;
+}
+#imagen{
+    float: left;
+    position: relative;
+    height:50%;
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
