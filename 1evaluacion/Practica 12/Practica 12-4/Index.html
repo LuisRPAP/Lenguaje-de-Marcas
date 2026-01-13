@@ -7,32 +7,20 @@
     <meta charset="UTF-8">
     <title>Luis Rodriguez Palacios Practica 11-1</title>
     <link rel="stylesheet" href="estilos/Estilos124.css" type="text/css" media="all">
-    <script language="JavaScrip" src="Funciones/funciones.js"></script>
+    <script src="Funciones/funciones.js"></script>
 
 </head>
 
 <body>
-   
-        <div class="boton" id="1">
-            Pasa el Raton
-        </div>
-        <div class="boton" id="2">
-            Pasa el Raton
-        </div>
-        <div class="boton" id="3">
-            Haz clic
-        </div>
-        <div class="boton" id="4" onmousedown="JavaScrip:cambiarColor(this.id);">
-            Pulsa el Raton
-        </div>
-        <div class="boton" id="5">
-            ¡¡Pillame!!
-        </div>
-        <div class="boton" id="6">
-            ¡¡Pillame!!
-        </div>
-
-        <div class="bombilla"><img id="luz" src="Imagenes/BombillaApagada.png" alt="Bombilla apagada" onmousedown="JavaScript:enciende(this.id);" onmouseup="JavaScript:apaga(this.id)">
+    <div class="contenedor">
+    <div class="boton" id="b1" onmouseover="JavaScript:gracias(this.id);">Pasa el Raton</div>
+    <div class="boton" id="b2" onmouseover="JavaScript:color(this.id);" onmouseout="JavaScript:colorAnt(this.id);">Pasa el Raton</div>
+    <div class="boton" id="b3" onclick="JavaScript:gracias(this.id);">Haz clic</div>
+    <div class="boton" id="b4" onmousedown="JavaScript:color(this.id);" onmouseup="JavaScript:colorAnt(this.id);">Pulsa el Raton</div>
+    <div class="boton" id="b5" onmouseover="JavaScript:posicion1(this.id);" onmouseout="JavaScript:posicion2(this.id);">¡¡Pillame!!</div>
+    <div class="boton" id="b6" onmouseover="JavaScript:posicion2(this.id);" onmouseout="JavaScript:posicion1(this.id);">¡¡Pillame!!</div>
+    </div>
+    <div class="bombilla" id="7"><img id="luz" src="Imagenes/BombillaApagada.png" alt="Bombilla apagada"onmousedown="JavaScript:bombillaOn(this.id);" onmouseup="JavaScript:bombillaOff(this.id)"></div>
 
 
 

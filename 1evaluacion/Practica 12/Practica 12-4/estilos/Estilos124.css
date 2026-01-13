@@ -1,6 +1,14 @@
+
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
+    
+}
+.contenedor {
+    display: flex;             
+    flex-wrap: wrap;           
+    justify-content: center;  
+    align-items: flex-start;   
 }
 .boton{
     background-color: blue;
@@ -8,13 +16,16 @@ body{
     width: 120px;
     height: 70px;
     margin: 20px;
-    border-radius: 10%;
-    display: inline-block;
-    text-align: center;
-    
+    border-radius: 10px;
+    display: flex;
+     
+
     
 }
 .bombilla{
     margin: auto;
     width: fit-content;
+}
+#b6{
+    visibility: hidden;
 }
