@@ -1,6 +1,9 @@
        
-            function color(id_objeto) {
-                document.getElementById(id_objeto).style.backgroundColor="red";
+            function foco(id_objeto) {
+                document.getElementById(id_objeto).style.border="6px solid red";
+            }
+            function sinfoco(id_objeto) {
+                document.getElementById(id_objeto).style.border="2px solid black";
             }
             function colorAnt(id_objeto) {
                 document.getElementById(id_objeto).style.backgroundColor="blue";

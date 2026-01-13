@@ -7,83 +7,86 @@
     <meta charset="UTF-8">
     <title>Luis Rodriguez Palacios Practica 11-1</title>
     <link rel="stylesheet" href="estilos/Estilos122.css" type="text/css" media="all">
+    <script src="Funciones/funciones.js"></script>
 
 
 </head>
 
 <body>
-   
-        <h1>
-            Recogida de información
-        </h1>
-        <form name="miCorreo" action="mailto:antoniop@iteite.es" method="post" enctype="text/plain">
-            <fieldset id="fiel0">
-                <legend>
-                    Datos Personales
-                </legend>
 
-                <div class="campos">
-                    <label for="nombre">Nombre:</label>
-                    <input class="Dp" type="text" name="nombre" placeholder="Nombre empresa" />
-                </div>
-                <div class="campos">
-                    <label for="direccion">Direccion:</label>
-                    <input class="Dp" type="text" name="direccion" placeholder="Direccion particular" />
-                </div>
-                <div class="campos">
-                    <label for="telefono">Teléfono:</label>
-                    <input class="Dp" type="text" name="telefono" placeholder="Móvil" />
-                </div>
+    <h1>
+        Recogida de información
+    </h1>
+    <form name="miCorreo" action="mailto:antoniop@iteite.es" method="post" enctype="text/plain">
+        <fieldset id="fiel0">
+            <legend>
+                Datos Personales
+            </legend>
 
-            </fieldset>
+            <div class="campos">
+                <label for="nombre">Nombre:</label>
+                <input class="Dp" id="dp1" type="text" name="nombre" placeholder="Nombre empresa"
+                    onfocus="JavaScript:foco(this.id);" onblur="JavaScript:sinfoco(this.id);"/>
 
-            <fieldset id="fiel1">
-                <div id="div0"></div>
-                <legend>
-                    Deportes: Fútbol
-                </legend>
-                <div id="div5">
-                    <div id="div1">
-                        <h2>
-                            Elige un equipo:
-                        </h2>
-                        <select>
-                            <option value="rma">Real Madrid</option>
-                            <br />
-                            <option value="fcb">Barcelona</option>
-                            <br />
-                            <option value="zar">Zaragoza</option>
-                            <br />
-                        </select>
-                    </div>
-                    <div id="div2">
-                        <h2>
-                            Elige un jugador:
-                        </h2>
-                        <br /><input type="radio" name="jugador" value="Messi">Messi
-                        <br />
-                        <br /><input type="radio" name="jugador" value="Ronaldo">Ronaldo
-                        <br />
-                        <br /><input type="radio" name="jugador" value="Falcao">Falcao
-                    </div>
-                    <div id="div3">
-                        <h2>
-                            Otras Aficiones:
-                        </h2>
-                        <br /><input type="checkbox" name="Aficiones" value="Musica">Musica
-                        <br />
-                        <br /><input type="checkbox" name="Aficiones" value="Lectura">Lectura
-                        <br />
-                        <br /><input type="checkbox" name="Aficiones" value="Videojuego">Videojuegos <br />
-                    </div>
-                </div>
-
-            </fieldset>
-            <div id="botones">
-                <input id="conf" type="submit" value="Confirmar" />
-                <input id="anul" type="reset" value="Anular" />
             </div>
-    
+            <div class="campos">
+                <label for="direccion">Direccion:</label>
+                <input class="Dp" id="dp2" type="text" name="direccion" placeholder="Direccion particular" onfocus="JavaScript:foco(this.id);" onblur="JavaScript:sinfoco(this.id);" />
+            </div>
+            <div class="campos">
+                <label for="telefono">Teléfono:</label>
+                <input class="Dp" id="dp3" type="text" name="telefono" placeholder="Móvil"onfocus="JavaScript:foco(this.id);" onblur="JavaScript:sinfoco(this.id);" />
+            </div>
+
+        </fieldset>
+
+        <fieldset id="fiel1">
+            <div id="div0"></div>
+            <legend>
+                Deportes: Fútbol
+            </legend>
+            <div id="div5">
+                <div id="div1">
+                    <h2>
+                        Elige un equipo:
+                    </h2>
+                    <select>
+                        <option value="rma">Real Madrid</option>
+                        <br />
+                        <option value="fcb">Barcelona</option>
+                        <br />
+                        <option value="zar">Zaragoza</option>
+                        <br />
+                    </select>
+                </div>
+                <div id="div2">
+                    <h2>
+                        Elige un jugador:
+                    </h2>
+                    <br /><input type="radio" name="jugador" value="Messi">Messi
+                    <br />
+                    <br /><input type="radio" name="jugador" value="Ronaldo">Ronaldo
+                    <br />
+                    <br /><input type="radio" name="jugador" value="Falcao">Falcao
+                </div>
+                <div id="div3">
+                    <h2>
+                        Otras Aficiones:
+                    </h2>
+                    <br /><input type="checkbox" name="Aficiones" value="Musica">Musica
+                    <br />
+                    <br /><input type="checkbox" name="Aficiones" value="Lectura">Lectura
+                    <br />
+                    <br /><input type="checkbox" name="Aficiones" value="Videojuego">Videojuegos <br />
+                </div>
+            </div>
+
+        </fieldset>
+        <div id="botones">
+            <input id="conf" type="submit" value="Confirmar" />
+            <input id="anul" type="reset" value="Anular" />
+        </div>
+
     </form>
 
 
