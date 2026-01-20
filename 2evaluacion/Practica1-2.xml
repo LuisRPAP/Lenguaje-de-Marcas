@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<libro>
+  <titulo>Arde París</titulo>
+  <autores>
+      <autor>
+          <nombre>Dominique</nombre>
+          <apellido>Lapierre</apellido> 
+      </autor>
+      <autor>
+          <nombre>Larry</nombre>
+          <apellido>Collins</apellido> 
+      </autor>
+   </autores>
+  <añoPublicacion>1975</añoPublicacion>
+  <editorial>Alfaguara</editorial>
+  <ISBN>97884010101</ISBN>
+  <fechaCompra>
+    <dia>12</dia>
+    <mes>10</mes>
+    <año>2012</año>
+  </fechaCompra>
+</libro>

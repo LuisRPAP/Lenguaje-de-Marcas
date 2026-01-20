@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<libro>
+  <titulo>El Quijote</titulo>
+  <autor>Cervantes</autor>
+  <añoPublicacion>2012</añoPublicacion>
+  <editorial>Planeta</editorial>
+  <ISBN>9788412345</ISBN>
+</libro>

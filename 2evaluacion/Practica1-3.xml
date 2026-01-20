@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca >
+<libro>
+  <titulo>El Quijote</titulo>
+  <autores>
+      <autor>
+          <nombre>Miguel</nombre>
+          <apellido>Cervantes</apellido> 
+      </autor>
+   </autores>
+  <añoPublicacion>2012</añoPublicacion>
+  <editorial>Planeta</editorial>
+  <ISBN>9788412345</ISBN>
+  <fechaCompra>
+    <dia></dia>
+    <mes></mes>
+    <año></año>
+  </fechaCompra>
+</libro>
+<libro>
+  <titulo>Arde París</titulo>
+  <autores>
+      <autor>
+          <nombre>Dominique</nombre>
+          <apellido>Lapierre</apellido> 
+      </autor>
+      <autor>
+          <nombre>Larry</nombre>
+          <apellido>Collins</apellido> 
+      </autor>
+   </autores>
+  <añoPublicacion>1975</añoPublicacion>
+  <editorial>Alfaguara</editorial>
+  <ISBN>97884010101</ISBN>
+  <fechaCompra>
+    <dia>12</dia>
+    <mes>10</mes>
+    <año>2012</año>
+  </fechaCompra>
+</libro>
+<libro>
+  <titulo>El Señor de los Anillos : La Comunidad del anillo</titulo>
+  <autores>
+      <autor>
+          <nombre>John Ronald Reuel</nombre>
+          <apellido>Tolkien</apellido> 
+      </autor>
+   </autores>
+  <añoPublicacion>1954</añoPublicacion>
+  <editorial>George Allen &amp; Unwin HarperCollins</editorial>
+  <ISBN>9780007136599</ISBN>
+  <fechaCompra>
+    <dia>12</dia>
+    <mes>10</mes>
+    <año>2020</año>
+  </fechaCompra>
+</libro>
+</biblioteca>
