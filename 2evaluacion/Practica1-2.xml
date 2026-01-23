@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<libro>
+<!DOCTYPE libro SYSTEM "Practica12.dtd">
+<libro recomendado="No">  
   <titulo>Arde París</titulo>
   <autores>
       <autor>
