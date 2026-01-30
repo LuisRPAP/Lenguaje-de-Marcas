@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="PracticaIV_XMl.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<biblioteca>
+   <libro>
+      <titulo>El ingenioso hidalgo Don Quijote de la Mancha</titulo>
+      <autor>Cervantes</autor>
+      <!--si
+      eliminto el autor da error-->
+      <editorial>Planeta</editorial>
+      <!--si
+      pongo editorial Planetas da error-->
+      <isbn>978841234567</isbn>
+      <!--si
+      no pones numero en isbn da error-->
+      <importe>6</importe>
+      <!--si
+      pongo 12,34 da error-->
+      <!--si
+      le pongo 3 euros al Quijote da error-->
+      <paginas>1234</paginas>
+      <prestado>true</prestado>
+      <!--si
+      pongo prestado "no", da error-->
+      <FechaCompra>2013-03-12</FechaCompra>
+      <!--si
+      cambio la fecha con / en vez de - da error -->
+      <!--si
+      pones fechas imposibles lo detecta y da error -->
+      <tipoUbicacion>
+         <!--Orden
+         cambiado, y permitido por la sentencia xs:all -->
+         <tipoBalda>5</tipoBalda>
+         <tipoArmario>1</tipoArmario>
+         <tipoBiblioteca></tipoBiblioteca>
+         <tipoEditorial></tipoEditorial>
+         <tipoImporte></tipoImporte>
+         <tipoLibro></tipoLibro>
+         <tipoTitulo></tipoTitulo>
+
+
+      </tipoUbicacion>
+   </libro>
+   <libro>
+      <titulo>Tomates verdes fritos</titulo>
+      <autor>Fannie Flagg</autor>
+      <editorial>Planeta</editorial>
+      <isbn>97884101010</isbn>
+      <importe>9.99</importe>
+      <paginas>555</paginas>
+      <prestado></prestado>
+      <!--Como
+      he puesto el valor por defecto de prestado = false no da error si no hay nada-->
+      <FechaCompra>2013-01-12</FechaCompra>
+      <tipoUbicacion>
+         <tipoArmario>2</tipoArmario>
+         <tipoBalda>2</tipoBalda>
+         <tipoBiblioteca></tipoBiblioteca>
+         <tipoEditorial></tipoEditorial>
+         <tipoImporte></tipoImporte>
+         <tipoLibro></tipoLibro>
+         <tipoTitulo></tipoTitulo>
+      </tipoUbicacion>
+   </libro>
+</biblioteca>

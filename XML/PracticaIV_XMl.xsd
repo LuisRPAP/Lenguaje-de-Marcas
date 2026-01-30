@@ -42,24 +42,31 @@
                             <xs:element name="paginas" type="xs:int" />
                             <xs:element name="prestado" type="xs:boolean" default="false" />
                             <xs:element name="FechaCompra" type="xs:date" />
-                            <xs:element name="ubicacion">
+                            <xs:element name="tipoUbicacion">
                                 <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="armario" />
-                                        <xs:simpleType>
-                                            <xs:restriction base="xs:decimal">
-                                                <xs:minInclusive value="5" />
-                                                <xs:maxInclusive value="25" />
-                                            </xs:restriction>
-                                        </xs:simpleType>
-                                        <xs:element name="balda" />
-                                        <xs:simpleType>
-                                            <xs:restriction base="xs:decimal">
-                                                <xs:minInclusive value="5" />
-                                                <xs:maxInclusive value="25" />
-                                            </xs:restriction>
-                                        </xs:simpleType>
-                                    </xs:sequence>
+                                    <xs:all>
+                                        <xs:element name="tipoArmario">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:decimal">
+                                                    <xs:minInclusive value="1" />
+                                                    <xs:maxInclusive value="10" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="tipoBalda">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:decimal">
+                                                    <xs:minInclusive value="1" />
+                                                    <xs:maxInclusive value="6" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="tipoBiblioteca" />
+                                        <xs:element name="tipoLibro" />
+                                        <xs:element name="tipoTitulo" />
+                                        <xs:element name="tipoEditorial" />
+                                        <xs:element name="tipoImporte" />
+                                    </xs:all>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
