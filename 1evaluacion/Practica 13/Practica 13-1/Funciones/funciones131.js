@@ -14,13 +14,6 @@ function sinfocozona(id_objeto) {
     document.getElementById(id_objeto).style.backgroundColor = "transparent";
 
 }
-function fecha(id_objeto) {
-     const hoy = new Date().toLocaleDateString(); 
-    alert("La fecha de hoy es: " + hoy); 
-}
-
-
-
 function confirmar(event) {
 
     const confirmacion = confirm("¿Estás seguro? Vamos a enviar los datos.");
@@ -28,14 +21,12 @@ function confirmar(event) {
     if (!confirmacion) {
         event.preventDefault();
     }
-}
+};
 function anular(event) {
 
     const confirmacion = confirm("¿Estás seguro? Se van a borrar todos los datos del formulario.");
 
-    if (confirmacion) {
-        
-    } else {
+    if (!confirmacion) {
         event.preventDefault();
     }
-}
+};
