@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT etiqueta (ficha*)>
+<!ELEMENT ficha (nombreCompleto*,direccion+,ciudad,pais,codigoPostal)>
+<!ELEMENT nombreCompleto ((nombre,apellido)| apodo)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT apodo (#PCDATA)>
+<!ELEMENT direccion (calle+,numero+)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT numero (#PCDATA)> 
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT codigoPostal (#PCDATA)>

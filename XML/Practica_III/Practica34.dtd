@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT biblioteca (libro*)>
+<!ELEMENT libro (titulo,autores*,añoPublicacion,editorial,ISBN,fechaCompra)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autores (autor*)>
+<!ELEMENT autor (nombre,apellido)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT añoPublicacion (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT fechaCompra (dia,mes,año)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ATTLIST libro recomendado (Sí|No) #IMPLIED>
+<!ATTLIST autor pais CDATA #REQUIRED>

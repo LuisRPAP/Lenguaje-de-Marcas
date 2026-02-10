@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Practica24.dtd" type="application/xml-dtd"?>
+<etiqueta>
+  <ficha>
+    <nombreCompleto>
+      <nombre>Pedro</nombre>
+      <apellido>Pérez</apellido>
+    </nombreCompleto>
+    <direccion>
+      <calle>Gran Via</calle>
+      <numero>45</numero>
+    </direccion>
+    <ciudad>Logroño</ciudad>
+    <pais>España</pais>
+    <codigoPostal>26006</codigoPostal>
+  </ficha>
+  <ficha>
+    <nombreCompleto>
+      <apodo>El Mañejas</apodo>
+    </nombreCompleto>
+    <direccion>
+      <calle>Rca Argentina</calle>
+      <numero>41</numero>
+    </direccion>
+    <direccion>
+      <calle>Poligono Malpica</calle>
+      <numero>4</numero>
+    </direccion>
+    <ciudad>Zaragoza</ciudad>
+    <pais>España</pais>
+    <codigoPostal>26006</codigoPostal>
+  </ficha>
+ <!-- <ficha>
+    <nombreCompleto>
+      <nombre>Felix</nombre>
+      <apellido>Fernandez</apellido>
+    </nombreCompleto>
+    
+    <ciudad>Paris</ciudad>
+    <pais>Francia</pais>
+    <codigoPostal>545</codigoPostal>
+  </ficha>-->
+
+</etiqueta>
