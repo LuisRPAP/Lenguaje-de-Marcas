@@ -15,5 +15,4 @@
 <!ELEMENT año (#PCDATA)>
 <!ATTLIST libro codLibro ID #REQUIRED>
 <!ATTLIST libro recomendado (sí|no) #REQUIRED>
-<!ATTLIST libro parecidoA IDREF #IMPLIED>
 <!ATTLIST autor pais CDATA #REQUIRED>

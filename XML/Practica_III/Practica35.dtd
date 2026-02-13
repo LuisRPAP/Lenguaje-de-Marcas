@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT videoClubs (videoClub*)>
+<!ELEMENT videoClub (pelicula*)>
+<!ELEMENT pelicula (titulo, director, añoEstreno, genero, actores*)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT director (#PCDATA)>   
+<!ELEMENT interpretes (#PCDATA)>
+<!ELEMENT genero(#PCDATA)>

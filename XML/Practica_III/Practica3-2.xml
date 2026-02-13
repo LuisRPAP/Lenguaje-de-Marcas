@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="Practica34.dtd" type="application/xml-dtd"?>
+<?xml-model href="Practica32.dtd" type="application/xml-dtd"?>
 <biblioteca>
-  <libro codLibro="L001" recomendado="sí" parecidoA="L002">
+  <libro recomendado="sí">
     <titulo>El Quijote</titulo>
     <autores>
       <autor pais="España">
@@ -18,7 +18,7 @@
       <año></año>
     </fechaCompra>
   </libro>
-  <libro codLibro="L002" recomendado="no" parecidoA="L001">
+  <libro recomendado="no">
     <titulo>Arde París</titulo>
     <autores>
       <autor pais="Francia">
@@ -39,7 +39,7 @@
       <año>2012</año>
     </fechaCompra>
   </libro>
-  <libro codLibro="L003" recomendado="sí" >
+  <libro recomendado="sí">
     <titulo>El Señor de los Anillos : La Comunidad del anillo</titulo>
     <autores>
       <autor pais="Reino Unido">
