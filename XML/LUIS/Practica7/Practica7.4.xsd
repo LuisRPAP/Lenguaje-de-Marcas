@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="tipoEficiencia">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="A"/>
+            <xs:enumeration value="B"/>
+            <xs:enumeration value="C"/>
+            <xs:enumeration value="D"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoAccesorios">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Panel"/>
+            <xs:enumeration value="Puerta"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoLocalidad">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Logroño"/>
+            <xs:enumeration value="Arnedo"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoReferencia">
+        <xs:restriction base="xs:string">
+            <xs:pattern value=".{6}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoLinea">
+        <xs:restriction base="xs:int"/>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoMarca">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="pais" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoElectrodomestico">
+        <xs:sequence>
+
+            <xs:element name="referencia" type="tipoReferencia"/>
+
+            <xs:element name="tipo">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="eficiencia" type="tipoEficiencia" use="required"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="marca" type="tipoMarca"/>
+
+            <xs:element name="precioVenta" type="xs:decimal"/>
+            <xs:element name="precioCoste" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="color" type="xs:string" maxOccurs="unbounded"/>
+
+            <xs:element name="instalacion">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="accesorios" type="tipoAccesorios" use="required"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="linea">
+                <xs:complexType>
+                    <xs:attribute name="linea" type="tipoLinea" use="required"/>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="localidad" type="tipoLocalidad"/>
+            <xs:element name="año" type="xs:gYear"/>
+            <xs:element name="unidades" type="xs:nonNegativeInteger"/>
+
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="almacen">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="electrodomestico" type="tipoElectrodomestico" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

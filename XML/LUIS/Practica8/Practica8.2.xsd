@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="tipoCombustible">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="gasolina"/>
+            <xs:enumeration value="gasoil"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoMarca">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="modelo" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="tipoPotencia">
+        <xs:simpleContent>
+            <xs:extension base="xs:int">
+                <xs:attribute name="combustible" type="tipoCombustible" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="tipoBajasEmisiones">
+        <xs:complexContent>
+            <xs:restriction base="xs:anyType">
+                <xs:attribute name="CO2" type="xs:string" use="optional"/>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="tipoCoche">
+        <xs:sequence>
+            <xs:element name="marca" type="tipoMarca"/>
+            <xs:element name="matricula" type="xs:string"/>
+            <xs:element name="potencia" type="tipoPotencia"/>
+            <xs:element name="numPlazas" type="xs:int"/>
+            <xs:element name="numPuertas" type="xs:int"/>
+            <xs:element name="bajasEmisiones" type="tipoBajasEmisiones" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="concesionario">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="coche" type="tipoCoche" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

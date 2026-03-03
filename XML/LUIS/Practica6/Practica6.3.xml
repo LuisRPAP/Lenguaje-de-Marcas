@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<?xml-model href="Practica6.3.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<hospital>
+
+    <paciente>
+
+        <nombre>José Jiménez Jonás</nombre>
+        <habitacion camas="2">314</habitacion>
+
+        <doctor Titular="SI">
+
+            <nombreDoctor>Casado</nombreDoctor>
+            <especialidad>Trauma</especialidad>
+            <fechaNacimiento>2000-01-12</fechaNacimiento>
+            <varon>true</varon>
+
+        </doctor>
+
+    </paciente>
+
+    <paciente>
+
+        <nombre>Félix Fernández Flores</nombre>
+        <habitacion camas="1">201</habitacion>
+
+        <doctor>
+
+            <nombreDoctor>Cifuentes</nombreDoctor>
+            <especialidad>Trauma</especialidad>
+            <fechaNacimiento>2001-02-13</fechaNacimiento>
+            <varon>true</varon>
+
+        </doctor>
+
+    </paciente>
+
+    <paciente>
+
+        <nombre>Luisa Leris López</nombre>
+        <habitacion camas="2">222</habitacion>
+
+        <doctor Titular="NO">
+
+            <nombreDoctor>Imaz</nombreDoctor>
+            <especialidad>Pediatría</especialidad>
+            <fechaNacimiento>2002-04-15</fechaNacimiento>
+            <varon>false</varon>
+            
+        </doctor>
+
+    </paciente>
+
+</hospital>

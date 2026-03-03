@@ -1,0 +1,30 @@
+<!ELEMENT concesionario (coche+)>
+
+<!ELEMENT coche (
+    marca,
+    matricula,
+    potencia,
+    numPlazas,
+    numPuertas,
+    bajasEmisiones?
+)>
+
+<!ELEMENT marca (#PCDATA)>
+<!ATTLIST marca
+    modelo CDATA #REQUIRED
+>
+
+<!ELEMENT matricula (#PCDATA)>
+
+<!ELEMENT potencia (#PCDATA)>
+<!ATTLIST potencia
+    combustible (gasolina | gasoil) #IMPLIED
+>
+
+<!ELEMENT numPlazas (#PCDATA)>
+<!ELEMENT numPuertas (#PCDATA)>
+
+<!ELEMENT bajasEmisiones EMPTY>
+<!ATTLIST bajasEmisiones
+    CO2 CDATA #IMPLIED
+>

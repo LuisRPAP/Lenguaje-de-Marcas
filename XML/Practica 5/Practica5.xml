@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Practica5.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<aeropuerto>
+<avion>
+<modelo>I7985</modelo>
+<compania>Iberia</compania>
+<numeroVuelo>1234</numeroVuelo>
+<prioridad>2</prioridad>
+<localizacion>
+<puerta>5</puerta>
+<letra>A</letra>    
+</localizacion>
+<combustible>15000</combustible>
+<temperatura>25</temperatura>
+</avion>
+
+</aeropuerto>

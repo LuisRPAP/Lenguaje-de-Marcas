@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="tipoModelo">
+        <xs:restriction base="xs:string">
+            <xs:length value="5"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoCompania">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Iberia"/>
+            <xs:enumeration value="Ryanair"/>
+            <xs:enumeration value="Emirates"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoNumVuelo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoPrioridad">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoNumPuerta">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="9"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoLetraPuerta">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoLitros">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="500"/>
+            <xs:maxInclusive value="20000"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoTemperatura">
+        <xs:restriction base="xs:int"/>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoLocalizacion">
+        <xs:choice>
+            <xs:sequence>
+                <xs:element name="puerta" type="tipoNumPuerta"/>
+                <xs:element name="letra" type="tipoLetraPuerta"/>
+            </xs:sequence>
+            <xs:sequence>
+                <xs:element name="letra" type="tipoLetraPuerta"/>
+                <xs:element name="puerta" type="tipoNumPuerta"/>
+            </xs:sequence>
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:complexType name="tipoCombustible">
+        <xs:sequence>
+            <xs:element name="litros" type="tipoLitros"/>
+            <xs:element name="temperatura" type="tipoTemperatura"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoAvion">
+        <xs:sequence>
+            <xs:element name="modelo" type="tipoModelo"/>
+            <xs:element name="compania" type="tipoCompania"/>
+            <xs:element name="numVuelo" type="tipoNumVuelo"/>
+            <xs:element name="prioridad" type="tipoPrioridad" minOccurs="0" default="3"/>
+            <xs:element name="localizacion" type="tipoLocalizacion"/>
+            <xs:element name="combustible" type="tipoCombustible"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoAeropuerto">
+        <xs:sequence>
+            <xs:element name="avion" type="tipoAvion" maxOccurs="25"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="aeropuerto" type="tipoAeropuerto"/>
+
+</xs:schema>

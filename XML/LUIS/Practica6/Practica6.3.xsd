@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="tipoNombreDoctor">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Casado"/>
+            <xs:enumeration value="Cifuentes"/>
+            <xs:enumeration value="Imaz"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoEspecialidad">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Trauma"/>
+            <xs:enumeration value="Pediatría"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoTitular">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="SI"/>
+            <xs:enumeration value="NO"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoSexo">
+        <xs:restriction base="xs:boolean"/>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoDoctor">
+        <xs:sequence>
+            <xs:element name="nombreDoctor" type="tipoNombreDoctor"/>
+            <xs:element name="especialidad" type="tipoEspecialidad"/>
+            <xs:element name="fechaNacimiento" type="xs:date"/>
+            <xs:element name="varon" type="tipoSexo"/>
+        </xs:sequence>
+        <xs:attribute name="Titular" type="tipoTitular" use="optional"/>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoCamas">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoHabitacion">
+        <xs:simpleContent>
+            <xs:extension base="xs:int">
+                <xs:attribute name="camas" type="tipoCamas" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="tipoPaciente">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="habitacion" type="tipoHabitacion"/>
+            <xs:element name="doctor" type="tipoDoctor"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoHospital">
+        <xs:sequence>
+            <xs:element name="paciente" type="tipoPaciente" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="hospital" type="tipoHospital"/>
+
+</xs:schema>

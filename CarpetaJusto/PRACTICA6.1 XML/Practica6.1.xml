@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Practica6.3.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<hospital>
+    <paciente>
+        <nombre>José Jiménez Jémez</nombre>
+        <habitacion numcamas="2">314</habitacion>
+        <doctor Especialidad="Trauma">Casado</doctor>
+        <fechanac>2000-01-12</fechanac>
+        <sexo>Hombre</sexo>
+    </paciente>
+    <paciente>
+        <nombre>Félix Fernández Flores</nombre>
+        <habitacion numcamas="1">201</habitacion>
+        <doctor Especialidad="Cardiología">Cifuentes</doctor>
+        <fechanac>2001-02-13</fechanac>
+        <sexo>Hombre</sexo>
+    </paciente>
+    <paciente>
+        <nombre>Luisa Leris López</nombre>
+        <habitacion numcamas="2">222</habitacion>
+        <doctor Titular="Sí" Especialidad="Pediatría">Cifuentes</doctor>
+        <fechanac>2002-04-15</fechanac>
+        <sexo>Mujer</sexo>
+    </paciente>
+</hospital>

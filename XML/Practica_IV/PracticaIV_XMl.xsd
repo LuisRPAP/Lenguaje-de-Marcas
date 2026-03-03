@@ -9,7 +9,7 @@
                             <xs:element name="titulo">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
-                                        <xs:maxLength value="50" />
+                                        <xs:maxLength value="25" />
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>

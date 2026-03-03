@@ -12,7 +12,7 @@
       <isbn>978841234567</isbn>
       <!--si
       no pones numero en isbn da error-->
-      <importe>6</importe>
+      <importe>3</importe>
       <!--si
       pongo 12,34 da error-->
       <!--si

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Practica7.4.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<almacen>
+
+    <electrodomestico>
+        <referencia>A12345</referencia>
+        <tipo eficiencia="A">Lavavajillas</tipo>
+
+        <marca>
+            <nombre>Fagor</nombre>
+            <pais>España</pais>
+        </marca>
+
+        <precioVenta>500</precioVenta>
+        <precioCoste>395.50</precioCoste>
+
+        <color>Blanco</color>
+        <color>Negro</color>
+
+        <instalacion accesorios="Puerta">Integrado</instalacion>
+
+        <linea linea="5"/>
+
+        <localidad>Logroño</localidad>
+        <año>2013</año>
+        <unidades>2</unidades>
+    </electrodomestico>
+
+    <electrodomestico>
+        <referencia>HRJ345</referencia>
+        <tipo eficiencia="A">Lavadora</tipo>
+
+        <marca>
+            <nombre>Miele</nombre>
+            <pais>Alemania</pais>
+        </marca>
+
+        <precioVenta>400</precioVenta>
+        <precioCoste>300</precioCoste>
+
+        <color>Blanco</color>
+
+        <instalacion accesorios="Puerta">Normal</instalacion>
+
+        <linea linea="2"/>
+
+        <localidad>Logroño</localidad>
+        <año>2013</año>
+        <unidades>0</unidades>
+    </electrodomestico>
+
+    <electrodomestico>
+        <referencia>B54321</referencia>
+        <tipo eficiencia="B">Frigorífico</tipo>
+
+        <marca>
+            <nombre>Siemens</nombre>
+            <pais>Alemania</pais>
+        </marca>
+
+        <precioVenta>750</precioVenta>
+        <precioCoste>566.50</precioCoste>
+
+        <color>Metálico</color>
+
+        <instalacion accesorios="Panel">Integrado</instalacion>
+
+        <linea linea="1"/>
+
+        <localidad>Arnedo</localidad>
+        <año>2013</año>
+        <unidades>1</unidades>
+    </electrodomestico>
+
+    <electrodomestico>
+        <referencia>ABC123</referencia>
+        <tipo eficiencia="B">Horno</tipo>
+
+        <marca>
+            <nombre>Balay</nombre>
+            <pais>España</pais>
+        </marca>
+
+        <precioVenta>200</precioVenta>
+        <precioCoste>125.50</precioCoste>
+
+        <color>Negro</color>
+
+        <instalacion accesorios="Puerta">Normal</instalacion>
+
+        <linea linea="7"/>
+
+        <localidad>Logroño</localidad>
+        <año>2013</año>
+        <unidades>5</unidades>
+    </electrodomestico>
+
+</almacen>

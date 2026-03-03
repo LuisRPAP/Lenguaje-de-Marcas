@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Luis Rodriguez Palacios Examen 2 Evaluacion</title>
+    <link rel="stylesheet" href="estilos/EstilosE2V.css" type="text/css" media="all">
+    <script src="Funciones/funciones.js"></script>
+
+
+</head>
+
+<body>
+
+    <h1>
+        Lista de aprobados
+    </h1>
+    <form name="miCorreo" action="mailto:jlazaro@iescomercio.com" method="post" enctype="text/plain">
+        <fieldset id="fiel0">
+            <legend>
+                Datos Personales
+            </legend>
+
+            <div class="campos">
+                <label for="nombre">Nombre:</label>
+                <input class="Dp" id="dp1" type="text" name="nombre" placeholder="Nombre"
+                    onfocus="JavaScript:foco(this.id);" onblur="JavaScript:sinfoco(this.id);" />
+
+            </div>
+            <div class="campos">
+                <label for="curso">Curso:</label>
+                <input class="Dp" id="dp2" type="text" name="direccion" placeholder="Curso"
+                    onfocus="JavaScript:foco(this.id);" onblur="JavaScript:sinfoco(this.id);" />
+            </div>
+
+        </fieldset>
+        <fieldset id="fiel1">
+            <legend>
+                Nota
+            </legend>
+
+            <div class="campos">
+                <h3>
+                <label for="nota">Elige tu nota:</label>
+                </h3>
+                 <select>
+                        <option value="I">Insuficiente</option>
+                        <br />
+                        <option value="SU">Suficiente</option>
+                        <br />
+                        <option value="B">Bien</option>
+                        <br />
+                        <option value="N">Notable</option>
+                        <br />
+                        <option value="SB">Sobresaliente</option>
+                        <br />
+                    </select>
+
+            </div>
+        </fieldset>
+        <fieldset id="fiel2">
+            <legend>
+                Profesor
+            </legend>
+
+            <div class="campos">
+                <div id="div2" onmouseover="focozona(this.id);" onmouseout="sinfocozona(this.id);">
+                    <h2>
+                        Elige tu profesor/a favorito:
+                    </h2>
+                    <br /><input type="radio" name="profesor" value="Jorge">Jorge
+                    <br />
+                    <br /><input type="radio" name="profesor" value="Cesar">César
+                    <br />
+                    <br /><input type="radio" name="profesor" value="Justo">Justo
+                    <br />
+                    <br /><input type="radio" name="profesor" value="Andrea">Andrea
+                    <br />
+                    <br /><input type="radio" name="profesor" value="Luis_Daniel">Luis Daniel
+                    <br />
+                    <br /><input type="radio" name="profesor" value="Raquel">Raquel
+                    <br />
+                    <br /><input type="radio" name="profesor" value="Luis_Manuel">Luis Manuel
+                </div>
+            </div>
+        </fieldset>
+       
+        <div id="botones">
+            <input id="conf" type="submit" value="Confirmar" onclick="confirmar(this.id)" />
+            <input id="anul" type="reset" value="Anular" onclick="anular(this.id)" />
+            <input id="fech" type="reset" value="Mostrar Fecha" onclick="fecha(this.id)" />
+        </div>
+
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>

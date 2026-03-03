@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Practica8.4.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<concesionario>
+
+    <coche>
+        <marca modelo="León">SEAT</marca>
+        <matricula>1234BBB</matricula>
+        <potencia combustible="gasoil">130</potencia>
+        <numPlazas>5</numPlazas>
+        <numPuertas>5</numPuertas>
+        <bajasEmisiones CO2="4"/>
+        <vendido>
+            <fechaVenta>2014-04-15</fechaVenta>
+            <comprador>
+                <nombre>Pepe</nombre>
+                <apellidos>Pérez</apellidos>
+            </comprador>
+        </vendido>
+    </coche>
+        
+    <coche>
+        <marca modelo="406">Peugeot</marca>
+        <matricula>9067DYC</matricula>
+        <potencia combustible="gasolina">90</potencia>
+        <numPlazas>5</numPlazas>
+        <numPuertas>4</numPuertas>
+        <bajasEmisiones/>
+        <novendido fechaEntrada="2013-12-12"/>
+    </coche>
+
+    <coche> 
+        <marca modelo="serie 1">BMW</marca>
+        <matricula>5678CCC</matricula>
+        <potencia combustible="gasoil">150</potencia>
+        <numPlazas>4</numPlazas>
+        <numPuertas>3</numPuertas>
+        <bajasEmisiones/>
+        <novendido fechaEntrada="2014-01-11"/>
+    </coche>
+
+</concesionario>

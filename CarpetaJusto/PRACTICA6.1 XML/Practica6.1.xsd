@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="hospital">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="paciente" type="TipoPaciente" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="TipoPaciente">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="habitacion" type="TipoHabitacion"/>
+            <xs:element name="doctor" type="TipoDoctor"/>
+            <xs:element name="fechanac" type="xs:date"/>
+            <xs:element name="sexo" type="TipoSexo"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TipoHabitacion">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="numcamas" type="xs:integer" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:simpleType name="TipoDoctor">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Casado"/>
+            <xs:enumeration value="Cifuentes"/>
+            <xs:enumeration value="Imaz"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="TipoSexo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Hombre"/>
+            <xs:enumeration value="Mujer"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Practica5.3.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<aeropuerto>
+
+    <avion>
+        <modelo>AB320</modelo>
+        <compania>Ryanair</compania>
+        <numVuelo>3589</numVuelo>
+        <prioridad>1</prioridad>
+        <localizacion>
+            <puerta>1</puerta>
+            <letra>B</letra>
+        </localizacion>
+        <combustible>
+            <litros>698</litros>
+            <temperatura>22</temperatura>
+        </combustible>
+    </avion>
+
+     <avion>
+        <modelo>AB370</modelo>
+        <compania>Iberia</compania>
+        <numVuelo>8111</numVuelo>
+        <prioridad>2</prioridad>
+        <localizacion>
+            <letra>C</letra>
+            <puerta>2</puerta>
+        </localizacion>
+        <combustible>
+            <litros>1500</litros>
+            <temperatura>23</temperatura>
+        </combustible>
+    </avion>
+
+     <avion>
+        <modelo>HP111</modelo>
+        <compania>Emirates</compania>
+        <numVuelo>1234</numVuelo>
+        <localizacion>
+            <puerta>7</puerta>
+            <letra>B</letra>
+        </localizacion>
+        <combustible>
+            <litros>1000</litros>
+            <temperatura>23</temperatura>
+        </combustible>
+    </avion>
+
+</aeropuerto>

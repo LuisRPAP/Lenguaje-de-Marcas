@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="Practica35.dtd" type="application/xml-dtd"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Practica36.dtd" type="application/xml-dtd"?>
 <videoClub>
   <pelicula>
     <titulo num.referencia="P1">Tomates verdes fritos</titulo>
-    <pais idioma="español">USA</pais>
+    <pais >USA</pais>
     <director>Jon avnet</director>
     <interpretes>
       <nombre>Mary Stuart</nombre>
@@ -28,5 +28,26 @@
     <genero>Aventura, Fantasia</genero>
     <duracion formato="3D">169</duracion>
     <año>2012</año>
+  </pelicula>
+    <pelicula>
+    <titulo num.referencia="P3">Los amantes pasajeros</titulo>
+    <!-- NO VALIDA PORQUE num.referencia ES UN ID Y NO PUEDE TENER DUPLICADOS -->
+    <pais idioma="español">España</pais>
+    <director>Pedro Almodovar</director>
+    <interpretes>
+      <nombre>Javier</nombre>
+      <apellido>Camara</apellido>
+    </interpretes>
+    <interpretes>
+      <nombre>Carlos</nombre>
+      <apellido>Areces</apellido>
+    </interpretes>
+    <interpretes>
+      <nombre>Raul</nombre>
+      <apellido>Arevalo</apellido>
+    </interpretes>
+    <genero>Comedia</genero>
+    <duracion formato="2D">90</duracion>
+    <año>2013</año>
   </pelicula>
 </videoClub>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="tipoCombustible">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="gasolina"/>
+            <xs:enumeration value="gasoil"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoMatricula">
+        <xs:restriction base="xs:string">
+            <xs:length value="7"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoMarca">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="modelo" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="tipoPotencia">
+        <xs:simpleContent>
+            <xs:extension base="xs:int">
+                <xs:attribute name="combustible" type="tipoCombustible" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoPlazas">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="2"/>
+            <xs:maxInclusive value="7"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoPuertas">
+        <xs:restriction base="xs:int">
+            <xs:enumeration value="3"/>
+            <xs:enumeration value="4"/>
+            <xs:enumeration value="5"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoCO2">
+        <xs:restriction base="xs:int">
+            <xs:maxExclusive value="5"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoBajasEmisiones">
+        <xs:complexContent>
+            <xs:restriction base="xs:anyType">
+                <xs:attribute name="CO2" type="tipoCO2" use="optional"/>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="tipoComprador">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="apellidos" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoVendido">
+        <xs:sequence>
+            <xs:element name="fechaVenta" type="xs:date"/>
+            <xs:element name="comprador" type="tipoComprador"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoNoVendido">
+        <xs:attribute name="fechaEntrada" type="xs:date" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoCoche">
+        <xs:sequence>
+            <xs:element name="marca" type="tipoMarca"/>
+            <xs:element name="matricula" type="tipoMatricula"/>
+            <xs:element name="potencia" type="tipoPotencia"/>
+            <xs:element name="numPlazas" type="tipoPlazas"/>
+            <xs:element name="numPuertas" type="tipoPuertas"/>
+            <xs:element name="bajasEmisiones" type="tipoBajasEmisiones" minOccurs="0"/>
+            <xs:choice>
+                <xs:element name="vendido" type="tipoVendido"/>
+                <xs:element name="novendido" type="tipoNoVendido"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="concesionario">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="coche" type="tipoCoche" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

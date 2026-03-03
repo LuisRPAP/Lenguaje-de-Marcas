@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Practica7.3.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<almacen>
+
+    <electrodomestico>
+        <referencia>A12345</referencia>
+        <tipo eficiencia="A">Lavavajillas</tipo>
+        <marca modelo="B23">Fagor</marca>
+        <precioVenta>500</precioVenta>
+        <precioCoste>395.50</precioCoste>
+        <color>Blanco</color>
+        <color>Negro</color>
+        <instalacion accesorios="Puerta">Integrado</instalacion>
+        <localidad>Logroño</localidad>
+        <año>2013</año>
+        <unidades>2</unidades>
+    </electrodomestico>
+
+    <electrodomestico>
+        <referencia>HRJ345</referencia>
+        <tipo eficiencia="A">Lavadora</tipo>
+        <marca modelo="H111">Miele</marca>
+        <precioVenta>400</precioVenta>
+        <precioCoste>300</precioCoste>
+        <color>Blanco</color>
+        <instalacion accesorios="Puerta">Normal</instalacion>
+        <localidad>Logroño</localidad>
+        <año>2013</año>
+        <unidades>0</unidades>
+    </electrodomestico>
+
+    <electrodomestico>
+        <referencia>B54321</referencia>
+        <tipo eficiencia="B">Frigorífico</tipo>
+        <marca modelo="NeoFrost">Siemens</marca>
+        <precioVenta>750</precioVenta>
+        <precioCoste>566.50</precioCoste>
+        <color>Metálico</color>
+        <instalacion accesorios="Panel">Integrado</instalacion>
+        <localidad>Arnedo</localidad>
+        <año>2013</año>
+        <unidades>1</unidades>
+    </electrodomestico>
+
+</almacen>

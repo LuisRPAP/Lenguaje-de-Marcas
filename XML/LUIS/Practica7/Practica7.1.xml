@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Practica7.1.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<almacen>
+
+    <electrodomestico>
+        <referencia>REF-001</referencia>
+        <tipo eficiencia="A">Lavadora</tipo>
+        <marca modelo="X200">Bosch</marca>
+        <precioVenta>499.99</precioVenta>
+        <precioCoste>350.00</precioCoste>
+        <color>Blanco</color>
+        <color>Inox</color>
+        <instalacion accesorios="Puerta">Integrada</instalacion>
+        <localidad>Madrid</localidad>
+        <año>2023</año>
+        <unidades>12</unidades>
+    </electrodomestico>
+
+    <electrodomestico>
+        <referencia>REF-002</referencia>
+        <tipo eficiencia="C">Microondas</tipo>
+        <marca>LG</marca>
+        <precioVenta>89.90</precioVenta>
+        <color>Negro</color>
+        <instalacion accesorios="Panel">Encimera</instalacion>
+        <localidad>Sevilla</localidad>
+        <año>2022</año>
+        <unidades>30</unidades>
+    </electrodomestico>
+
+</almacen>
