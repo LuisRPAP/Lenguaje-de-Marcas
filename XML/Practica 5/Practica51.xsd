@@ -7,20 +7,6 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="Tcompania">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="Iberia" />
-            <xs:enumeration value="Ryanair" />
-            <xs:enumeration value="Emirates" />
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="TnumeroVuelo">
-        <xs:restriction base="xs:string">
-            <xs:pattern value="[0-9]{4}" />
-        </xs:restriction>
-    </xs:simpleType>
-
     <xs:simpleType name="Tprioridad">
         <xs:restriction base="xs:integer">
             <xs:minInclusive value="1" />
@@ -34,9 +20,9 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="Tletra">
+    <xs:simpleType name="TVuelo">
         <xs:restriction base="xs:string">
-            <xs:length value="1" />
+            <xs:pattern value="[0-9]{4}" />
         </xs:restriction>
     </xs:simpleType>
 
@@ -47,9 +33,14 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="Ttemperatura">
-        <xs:restriction base="xs:decimal" />
+    <xs:simpleType name="Tcompania">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Iberia" />
+            <xs:enumeration value="Ryanair" />
+            <xs:enumeration value="Emirates" />
+        </xs:restriction>
     </xs:simpleType>
+
 
     <xs:element name="aeropuerto">
         <xs:complexType>
@@ -59,18 +50,18 @@
                         <xs:sequence>
                             <xs:element name="modelo" type="Tmodelo" />
                             <xs:element name="compania" type="Tcompania" />
-                            <xs:element name="numeroVuelo" type="TnumeroVuelo" />
+                            <xs:element name="Vuelo" type="TVuelo" />
                             <xs:element name="prioridad" type="Tprioridad" default="3" minOccurs="0" />
                             <xs:element name="localizacion">
                                 <xs:complexType>
                                     <xs:all>
                                         <xs:element name="puerta" type="Tpuerta" />
-                                        <xs:element name="letra" type="Tletra" />
+                                        <xs:element name="letra" />
                                     </xs:all>
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="combustible" type="Tcombustible" />
-                            <xs:element name="temperatura" type="Ttemperatura" />
+                            <xs:element name="temperatura" />
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>

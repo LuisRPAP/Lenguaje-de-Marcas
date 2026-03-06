@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="Tmodelo">
+        <xs:restriction base="xs:string">
+            <xs:length value="5" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Tprioridad">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+            <xs:maxInclusive value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Tpuerta">
+        <xs:restriction base="xs:integer">
+            <xs:maxExclusive value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TVuelo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{4}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Tcombustible">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="500" />
+            <xs:maxInclusive value="20000" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Tcompania">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Iberia" />
+            <xs:enumeration value="Ryanair" />
+            <xs:enumeration value="Emirates" />
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:element name="aeropuerto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="avion" maxOccurs="25">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="modelo" type="Tmodelo" />
+                            <xs:element name="compania" type="Tcompania" />
+                            <xs:element name="Vuelo" type="TVuelo" />
+                            <xs:element name="prioridad" type="Tprioridad" default="3" minOccurs="0" />
+                            <xs:element name="localizacion">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="puerta" type="Tpuerta" />
+                                        <xs:element name="letra" />
+                                    </xs:all>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="combustible" type="Tcombustible" />
+                            <xs:element name="temperatura" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

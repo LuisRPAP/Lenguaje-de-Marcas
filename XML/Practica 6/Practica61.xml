@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Practica61.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<hospital>
+    <paciente>
+        <Nombre></Nombre>
+    <Habitacion></Habitacion>
+    <Doctor></Doctor>
+    <fechaNacimiento></fechaNacimiento>
+    <Varon></Varon>
+    </paciente>
+</hospital>

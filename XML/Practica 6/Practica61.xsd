@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="Tdoctor">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Cifuentes"/>
+      <xs:enumeration value="Casado"/>
+      <xs:enumeration value=""/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="hospital">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="paciente" maxOccurs="25">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nombre" type="xs:string"/>
+              <xs:element name="habitacion">
+                <xs:complexType>
+                  <xs:attribute name="camas" type="xs:integer" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Doctor" type="Tdoctor"/>
+              <xs:element name="fechaNacimiento" type="xs:string"/>
+              <xs:element name="Varon" type="xs:boolean"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
