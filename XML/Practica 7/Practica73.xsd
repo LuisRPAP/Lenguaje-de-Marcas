@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="Nefi">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="A" />
+      <xs:enumeration value="B" />
+      <xs:enumeration value="C" />
+      <xs:enumeration value="D" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="Ttipo">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="Eficiencia" type="Nefi" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Tmarca">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="Modelo" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="Tacc">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Panel" />
+      <xs:enumeration value="Puerta" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="Tins">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="Accesorios" type="Tacc" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+
+  <xs:element name="Almacen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Electrodomestico" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Referencia" />
+              <xs:element name="Tipo" type="Ttipo" />
+              <xs:element name="Marca" type="Tmarca" />
+              <xs:element name="Precio_de_venta" />
+              <xs:element name="Precio_de_coste" />
+              <xs:element name="Color" maxOccurs="unbounded" />
+              <xs:element name="Instalacion" type="Tins" />
+              <xs:element name="Localidad" />
+              <xs:element name="Año" />
+              <xs:element name="Unidades" />
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

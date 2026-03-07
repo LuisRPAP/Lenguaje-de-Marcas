@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Almacen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Practica73.xsd">
+    <Electrodomestico>
+        <Referencia>A12345</Referencia>
+        <Tipo Eficiencia="A">Lavabajillas</Tipo>
+        <Marca Modelo="B23">Fagor</Marca>
+        <Precio_de_venta>500</Precio_de_venta>
+        <Precio_de_coste>395.50</Precio_de_coste>
+        <Color>Blanco</Color>
+        <Color>Negro</Color>
+        <Instalacion Accesorios="Puerta">Integrado</Instalacion>
+        <Localidad>Logroño</Localidad>
+        <Año>2013</Año>
+        <Unidades>2</Unidades>
+    </Electrodomestico>
+</Almacen>
