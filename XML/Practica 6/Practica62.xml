@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Practica62.xsd">
+    <paciente>
+        <Nombre>Jose Jimmenez Jemez</Nombre>
+        <Habitacion Numero_de_camas="4">314</Habitacion>
+        <Doctor Titular="Interino">Casado</Doctor>
+        <fechaNacimiento>12 de enero de 2000</fechaNacimiento>
+        <Varon>true</Varon>
+    </paciente>
+    <paciente>
+        <Nombre>Felix Fernandez Flores</Nombre>
+        <Habitacion Numero_de_camas=>201</Habitacion>
+        <Doctor>Cifuentes</Doctor>
+        <fechaNacimiento>13 de Febrero de 2001</fechaNacimiento>
+        <Varon>true</Varon>
+    </paciente>
+    <paciente>
+        <Nombre>Luisa Leris Lopez</Nombre>
+        <Habitacion Numero_de_camas="2">222</Habitacion>
+        <Doctor Titular="No">Imaz</Doctor>
+        <fechaNacimiento>15 de abril de 2002</fechaNacimiento>
+        <Varon>false</Varon>
+    </paciente>
+</hospital>

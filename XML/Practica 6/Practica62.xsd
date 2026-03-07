@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="Ncamas">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="THabitacion">
+    <xs:simpleContent>
+      <xs:extension base="xs:integer">
+        <xs:attribute name="Numero_de_camas" type="Ncamas" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="Ttitular">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Si" />
+      <xs:enumeration value="No" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TNDoctor">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Cifuentes" />
+      <xs:enumeration value="Casado" />
+      <xs:enumeration value="Imaz" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="Tdoctor">
+    <xs:simpleContent>
+      <xs:extension base="TNDoctor">
+        <xs:attribute name="Titular" type="Ttitular" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="hospital">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="paciente" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nombre" type="xs:string" />
+              <xs:element name="Habitacion" type="THabitacion" />
+              <xs:element name="Doctor" type="Tdoctor" />
+              <xs:element name="fechaNacimiento" type="xs:string" />
+              <xs:element name="Varon" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
