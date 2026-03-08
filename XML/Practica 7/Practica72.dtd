@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Almacen (Electrodomestico+)>
+<!ELEMENT Electrodomestico (Referencia,Tipo,Marca,Precio_de_venta,Precio_de_coste*,Color+,Instalacion,Localidad,Anio,Unidades)>
+<!ELEMENT Referencia (#PCDATA)>
+<!ELEMENT Tipo (#PCDATA)>
+<!ELEMENT Marca (#PCDATA)>
+<!ELEMENT Precio_de_venta (#PCDATA)>
+<!ELEMENT Precio_de_coste (#PCDATA)>
+<!ELEMENT Color (#PCDATA)>
+<!ELEMENT Instalacion (#PCDATA)>
+<!ELEMENT Localidad (#PCDATA)>
+<!ELEMENT Anio (#PCDATA)>
+<!ELEMENT Unidades (#PCDATA)>
+
+<!ATTLIST Tipo Eficiencia (A|B|C|D) #REQUIRED>
+<!ATTLIST Marca Modelo CDATA #IMPLIED>
+<!ATTLIST Instalacion Accesorios (Panel|Puerta) #REQUIRED>

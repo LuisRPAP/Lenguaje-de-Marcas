@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Almacen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="Practica73.xsd">
+<?xml-model href="Practica72.dtd" type="application/xml-dtd"?>
+<Almacen>
     <Electrodomestico>
         <Referencia>A12345</Referencia>
         <Tipo Eficiencia="A">Lavavajillas</Tipo>

@@ -17,13 +17,7 @@
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
-  <xs:complexType name="Tmarca">
-    <xs:simpleContent>
-      <xs:extension base="xs:string">
-        <xs:attribute name="Modelo" />
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
+
   <xs:simpleType name="Tacc">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Panel" />
@@ -37,22 +31,61 @@
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
+  <xs:complexType name="Tlinea">
+    <xs:attribute name="linea" type="xs:integer" use="required" />
+  </xs:complexType>
+
+  <xs:simpleType name="Tref">
+    <xs:restriction base="xs:string">
+      <xs:length value="6" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Tloc">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Logroño" />
+      <xs:enumeration value="Arnedo" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Tanio">
+    <xs:restriction base="xs:string">
+      <xs:length value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Tuni">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0" />
+    </xs:restriction>
+  </xs:simpleType>
+
+
   <xs:element name="Almacen">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="Electrodomestico" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Referencia" />
+              <xs:element name="Referencia" type="Tref" />
               <xs:element name="Tipo" type="Ttipo" />
-              <xs:element name="Marca" type="Tmarca" />
+              <xs:element name="Marca">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Nombre" type="xs:string" />
+                    <xs:element name="Pais" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="Modelo" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
               <xs:element name="Precio_de_venta" />
               <xs:element name="Precio_de_coste" minOccurs="0" />
               <xs:element name="Color" maxOccurs="unbounded" />
+              <xs:choice>
+                <xs:element name="Linea_blanca" type="Tlinea" />
+                <xs:element name="Linea_marron" type="Tlinea" />
+              </xs:choice>
               <xs:element name="Instalacion" type="Tins" />
-              <xs:element name="Localidad" />
-              <xs:element name="Anio" />
-              <xs:element name="Unidades" />
+              <xs:element name="Localidad" type="Tloc" />
+              <xs:element name="Anio" type="Tanio" />
+              <xs:element name="Unidades" type="Tuni" />
 
             </xs:sequence>
           </xs:complexType>

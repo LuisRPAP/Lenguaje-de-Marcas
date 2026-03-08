@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Almacen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="Practica73.xsd">
+    xsi:noNamespaceSchemaLocation="Practica74.xsd">
     <Electrodomestico>
-        <Referencia>A12345</Referencia>
+        <Referencia>A1234</Referencia>
         <Tipo Eficiencia="A">Lavavajillas</Tipo>
-        <Marca Modelo="B23">Fagor</Marca>
+        <Marca Modelo="B23">
+            <Nombre>Fagor</Nombre>
+            <Pais>España</Pais>
+        </Marca>
         <Precio_de_venta>500</Precio_de_venta>
         <Precio_de_coste>395.50</Precio_de_coste>
         <Color>Blanco</Color>
         <Color>Negro</Color>
+        <Linea_blanca linea="5" />
         <Instalacion Accesorios="Puerta">Integrado</Instalacion>
         <Localidad>Logroño</Localidad>
         <Anio>2013</Anio>
@@ -17,25 +21,49 @@
     <Electrodomestico>
         <Referencia>HRH345</Referencia>
         <Tipo Eficiencia="A">Lavadora</Tipo>
-        <Marca Modelo="H111">Miele</Marca>
+        <Marca Modelo="H111">
+            <Nombre>Miele</Nombre>
+            <Pais>Alemania</Pais>
+        </Marca>
         <Precio_de_venta>400</Precio_de_venta>
         <Precio_de_coste>300</Precio_de_coste>
         <Color>Blanco</Color>
+        <Linea_blanca linea="2" />
         <Instalacion Accesorios="Puerta">Normal</Instalacion>
-        <Localidad>Logroño</Localidad>
-        <Anio>2013</Anio>
-        <Unidades>0</Unidades>
+        <Localidad>Zaragoza</Localidad>
+        <Anio>13</Anio>
+        <Unidades>-5</Unidades>
     </Electrodomestico>
     <Electrodomestico>
         <Referencia>B54321</Referencia>
         <Tipo Eficiencia="B">Frigorifico</Tipo>
-        <Marca Modelo="NeoFrost">Siemens</Marca>
+        <Marca Modelo="NeoFrost">
+            <Nombre>Siemens</Nombre>
+            <Pais>Alemania</Pais>
+        </Marca>
         <Precio_de_venta>750</Precio_de_venta>
         <Precio_de_coste>566.50</Precio_de_coste>
         <Color>Metalico</Color>
+        <Linea_blanca linea="1" />
         <Instalacion Accesorios="Panel">Integrado</Instalacion>
         <Localidad>Arnedo</Localidad>
         <Anio>2013</Anio>
         <Unidades>1</Unidades>
+    </Electrodomestico>
+    <Electrodomestico>
+        <Referencia>ABC123</Referencia>
+        <Tipo Eficiencia="B">Horno</Tipo>
+        <Marca Modelo="H23">
+            <Nombre>Balay</Nombre>
+            <Pais>España</Pais>
+        </Marca>
+        <Precio_de_venta>200</Precio_de_venta>
+        <Precio_de_coste>125.50</Precio_de_coste>
+        <Color>Negro</Color>
+        <Linea_marron linea="7" />
+        <Instalacion Accesorios="Puerta">Normal</Instalacion>
+        <Localidad>Logroño</Localidad>
+        <Anio>2013</Anio>
+        <Unidades>5</Unidades>
     </Electrodomestico>
 </Almacen>

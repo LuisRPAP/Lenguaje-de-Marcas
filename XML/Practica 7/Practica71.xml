@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Almacen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="Practica71.xsd">
+<Almacen>
     <Electrodomestico>
         <Referencia>A12345</Referencia>
-        <Tipo Eficiencia="A">Lavabajillas</Tipo>
+        <Tipo Eficiencia="A">Lavavajillas</Tipo>
         <Marca Modelo="B23">Fagor</Marca>
         <Precio_de_venta>500</Precio_de_venta>
         <Precio_de_coste>395.50</Precio_de_coste>
@@ -11,7 +10,31 @@
         <Color>Negro</Color>
         <Instalacion Accesorios="Puerta">Integrado</Instalacion>
         <Localidad>Logroño</Localidad>
-        <Año>2013</Año>
+        <Anio>2013</Anio>
         <Unidades>2</Unidades>
+    </Electrodomestico>
+    <Electrodomestico>
+        <Referencia>HRH345</Referencia>
+        <Tipo Eficiencia="A">Lavadora</Tipo>
+        <Marca Modelo="H111">Miele</Marca>
+        <Precio_de_venta>400</Precio_de_venta>
+        <Precio_de_coste>300</Precio_de_coste>
+        <Color>Blanco</Color>
+        <Instalacion Accesorios="Puerta">Normal</Instalacion>
+        <Localidad>Logroño</Localidad>
+        <Anio>2013</Anio>
+        <Unidades>0</Unidades>
+    </Electrodomestico>
+    <Electrodomestico>
+        <Referencia>B54321</Referencia>
+        <Tipo Eficiencia="B">Frigorifico</Tipo>
+        <Marca Modelo="NeoFrost">Siemens</Marca>
+        <Precio_de_venta>750</Precio_de_venta>
+        <Precio_de_coste>566.50</Precio_de_coste>
+        <Color>Metalico</Color>
+        <Instalacion Accesorios="Panel">Integrado</Instalacion>
+        <Localidad>Arnedo</Localidad>
+        <Anio>2013</Anio>
+        <Unidades>1</Unidades>
     </Electrodomestico>
 </Almacen>
