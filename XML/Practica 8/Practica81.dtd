@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Concesionario (Vehiculo+)>
+<!ELEMENT Vehiculo (marca,matricula,potencia,numPlazas,numPuertas,bajasEmisiones)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT matricula (#PCDATA)>
+<!ELEMENT potencia (#PCDATA)>
+<!ELEMENT numPlazas (#PCDATA)>
+<!ELEMENT numPuertas (#PCDATA)>
+<!ELEMENT bajasEmisiones (#PCDATA)>
+
+<!ATTLIST marca modelo CDATA #REQUIRED>
+<!ATTLIST potencia combustible (gasolina|gasoil) "gasolina">
+<!ATTLIST Instalacion Accesorios (Panel|Puerta) #REQUIRED>
+<!ATTLIST bajasEmisiones CO2 CDATA #IMPLIED>

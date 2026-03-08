@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="Tmarca">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="modelo" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="Tcomb">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="gasolina" />
+      <xs:enumeration value="gasoil" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="Tpotencia">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="combustible" type="Tcomb" default="gasolina" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="Tco2">
+    <xs:restriction base="xs:integer">
+      <xs:maxInclusive value="5" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="Tbajas">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="CO2" type="Tco2" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="Tmatricula">
+    <xs:restriction base="xs:string">
+      <xs:length value="7" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="Tplaza">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="2" />
+      <xs:maxInclusive value="7" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="Tpuerta">
+    <xs:restriction base="xs:integer">
+      <xs:enumeration value="3" />
+      <xs:enumeration value="4" />
+      <xs:enumeration value="5" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="Tcomprador">
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:string" />
+      <xs:element name="apellidos" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Tventa">
+    <xs:sequence>
+      <xs:element name="fechaVenta" type="xs:date" />
+      <xs:element name="comprador" type="Tcomprador" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="Concesionario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Vehiculo" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="marca" type="Tmarca" minOccurs="1" />
+              <xs:element name="matricula" type="Tmatricula" />
+              <xs:element name="potencia" type="Tpotencia" />
+              <xs:element name="numPlazas" type="Tplaza" />
+              <xs:element name="numPuertas" type="Tpuerta" />
+              <xs:element name="bajasEmisiones" type="Tbajas" minOccurs="0" />
+              <xs:element name="vendido" type="Tventa" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

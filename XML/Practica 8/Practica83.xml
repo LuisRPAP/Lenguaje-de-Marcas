@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Concesionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Practica83.xsd">
+    <Vehiculo>
+        <marca modelo="Leon">SEAT</marca>
+        <matricula>1234BBB</matricula>
+        <potencia combustible="gasoil"></potencia>
+        <numPlazas>5</numPlazas>
+        <numPuertas>6</numPuertas>
+        <bajasEmisiones CO2="10"></bajasEmisiones>
+        <vendido>
+            <fechaVenta>2026-03-08</fechaVenta>
+            <comprador>
+                <nombre>Luis</nombre>
+                <apellidos>Rodriguez Palacios</apellidos>
+            </comprador>
+        </vendido>
+    </Vehiculo>
+    <Vehiculo>
+        <marca modelo="406">Peugeot</marca>
+        <matricula>9067DYC</matricula>
+        <potencia combustible="gasoil">90</potencia>
+        <numPlazas>8</numPlazas>
+        <numPuertas>5</numPuertas>
+        <bajasEmisiones></bajasEmisiones>
+    </Vehiculo>
+    <Vehiculo>
+        <marca modelo="serie 1">BMW</marca>
+        <matricula>5678CC</matricula>
+        <potencia>150</potencia>
+        <numPlazas>4</numPlazas>
+        <numPuertas>3</numPuertas>
+        <bajasEmisiones></bajasEmisiones>
+    </Vehiculo>
+</Concesionario>
