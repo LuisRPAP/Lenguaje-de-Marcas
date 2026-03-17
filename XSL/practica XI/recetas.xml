@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Practica11_plantillas.xsl" type="text/xsl"?>
+<recetas>
+    <receta>
+        <tipo definicion="postre"/>
+        <dificultad>Fácil</dificultad>
+        <nombre>Tarta de chocolate</nombre>
+        <ingredientes>
+            <ingrediente nombre="Cola-Cao" cantidad="250 gramos"/>
+            <ingrediente nombre="mantequilla" cantidad="200 gramos"/>
+            <ingrediente nombre="harina" cantidad="1 vaso"/>
+            <ingrediente nombre="azúcar" cantidad="1 vaso"/>
+            <ingrediente nombre="huevos" cantidad="3"/>
+        </ingredientes>
+        <calorias>600</calorias>
+        <pasos>
+            <paso orden="1">Mezclar el cola-cao con la mantequilla.</paso>
+            <paso orden="2">Separar las yemas y mezclarlas con el azúcar.</paso>
+            <paso orden="3">Unir ambas mezclas y añadir la harina.</paso>
+            <paso orden="4">Montar las claras y añadirlas a la mezcla anterior mezclando siempre de arriba hacia abajo para que no se bajen las claras.</paso>
+            <paso orden="5">Untar un molde de mantequilla y espolvorear de harina.</paso>
+            <paso orden="6">Precalentar el horno y hornear a 175º durante unos 40 min.</paso>
+        </pasos>
+        <tiempo>45 minutos</tiempo>
+        <elaboracion>Horno</elaboracion>
+    </receta>
+    <receta>
+        <tipo definicion="postre"/>
+        <dificultad>Media</dificultad>
+        <nombre>Tiramisú</nombre>
+        <ingredientes>
+            <ingrediente nombre="cobertura Valor" cantidad="100 gramos"/>
+            <ingrediente nombre="bizcochos blandos" cantidad="24"/>
+            <ingrediente nombre="azúcar" cantidad="0.5 vasos"/>
+            <ingrediente nombre="café solo" cantidad="1 tazón"/>
+            <ingrediente nombre="huevos" cantidad="3"/>
+            <ingrediente nombre="licor" cantidad="1 chorrito"/>
+            <ingrediente nombre="nata líquida" cantidad="0.3 litros"/>
+            <ingrediente nombre="queso mascarpone" cantidad="250 gramos"/>
+        </ingredientes>
+        <calorias>450</calorias>
+        <pasos>
+            <paso orden="1"> Echar la mitad del azúcar en la nata liquida y montarla hasta que quede muy compacta.</paso>
+            <paso orden="2">Separar las claras de las yemas y montarlas a punto de nieve.</paso>
+            <paso orden="3">Mezclar despacio el queso y las yemas de huevo, añadiendo el resto del azúcar.</paso>
+            <paso orden="4">Cuando el queso y las yemas estén mezclados juntar con la nata montada y las claras a punto de nieve y mezclar todo bien, pero despacio.</paso>
+            <paso orden="5">En el café caliente disolver un tercio del chocolate y echar un chorrito de licor.</paso>
+            <paso orden="6">Mojar muy ligeramente los bizcochos en el café sin dejar que se empapen y disponer la mitad de ellos cubriendo el fondo de una fuente.</paso>
+            <paso orden="7">Echar la mitad de la mezcla sobre los bizcochos cubriéndolos uniformemente.</paso>
+            <paso orden="8">Poner una nueva capa de bizcochos mojados sobre la mezcla.</paso>
+            <paso orden="9">Echar el resto de la mezcla sobre la segunda capa de bizcochos.</paso>
+            <paso orden="10">Dejar reposar al menos 6 horas antes de servir.</paso>
+        </pasos>
+        <tiempo>7 horas</tiempo>
+        <elaboracion>Microondas</elaboracion>
+    </receta>
+    <receta>
+        <tipo definicion="plato de cuchara"/>
+        <dificultad>Fácil</dificultad>
+        <nombre>Sopa de cebolla</nombre>
+        <ingredientes>
+            <ingrediente nombre="cebollas" cantidad="1 kilogramo"/>
+            <ingrediente nombre="caldo de carne" cantidad="2 litros"/>
+            <ingrediente nombre="mantequilla" cantidad="100 gramos"/>
+            <ingrediente nombre="harina" cantidad="1 cucharada"/>
+            <ingrediente nombre="queso rallado" cantidad="100 gramos"/>
+            <ingrediente nombre="pan tostado" cantidad="4 rebanadas"/>
+            <ingrediente nombre="tomillo" cantidad="1 pellizco"/>
+            <ingrediente nombre="pimienta" cantidad="al gusto"/>
+            <ingrediente nombre="laurel" cantidad="1 hoja"/>
+        </ingredientes>
+        <calorias>400</calorias>
+        <pasos>
+            <paso orden="1">Pelar y partir las cebollas en rodajas finas.</paso>
+            <paso orden="2">Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que estén transparentes sin dorarse.</paso>
+            <paso orden="3">Añadir la harina sin dejar de remover.</paso>
+            <paso orden="4">Ponerlo en una cazuela con el caldo, el tomillo y el laurel.</paso>
+            <paso orden="5">Poner las rebanadas de pan encima, espolvorear el queso y gratinar al horno.</paso>
+        </pasos>
+        <tiempo>30 minutos</tiempo>
+        <elaboracion>Fuego lento</elaboracion>
+    </receta>
+    <receta>
+        <tipo definicion="guarnición"/>
+        <dificultad>Fácil</dificultad>
+        <nombre>Patatas fritas</nombre>
+        <ingredientes>
+            <ingrediente nombre="patatas" cantidad="3 ó 4"/>
+            <ingrediente nombre="ajo" cantidad="4 dientes"/>
+            <ingrediente nombre="aceite de oliva" cantidad="1 chorrito"/>
+            <ingrediente nombre="sal" cantidad="al gusto"/>
+        </ingredientes>
+        <calorias>300</calorias>
+        <pasos>
+            <paso orden="1">Calentar aceite en una sartén.</paso>
+            <paso orden="2">Añadir las patatas cortadas la sal y los ajos.</paso>
+            <paso orden="3">Freir al gusto.</paso>
+            <paso orden="4">Servir en el plato</paso>
+        </pasos>
+        <tiempo>15 minutos</tiempo>
+        <elaboracion>Sartén</elaboracion>
+    </receta>
+    <receta>
+        <tipo definicion="plato de cuchara"/>
+        <dificultad>Fácil</dificultad>
+        <nombre>Crema de calabacín</nombre>
+        <ingredientes>
+            <ingrediente nombre="calabacines troceados" cantidad="1 kilogramo"/>
+            <ingrediente nombre="cebolla" cantidad="1"/>
+            <ingrediente nombre="patatas" cantidad="2"/>
+            <ingrediente nombre="pan seco" cantidad="4 rebanadas"/>
+            <ingrediente nombre="aceite de oliva" cantidad="1 chorrito"/>
+            <ingrediente nombre="pimienta" cantidad="al gusto"/>
+            <ingrediente nombre="sal" cantidad="al gusto"/>
+        </ingredientes>
+        <calorias>50</calorias>
+        <pasos>
+            <paso orden="1">Calienta una olla con agua. Mientras tanto, añade dos cucharadas de aceite en una cazuela y agrega la cebolla troceada. </paso>
+            <paso orden="2">Saltea durante unos 3 o 4 minutos y añade la patata y el calabacín.</paso>
+            <paso orden="3">Vierte el agua que has calentado en la olla hasta que cubra el calabacín. Cuécelo todo durante 20 minutos aproximadamente.</paso>
+            <paso orden="4">Corta las rebanadas de pan a cuadraditos de un centímetro más menos. Fríelos a fuego medio unos 3 minutos. Escurre sobre papel absorbente.</paso>
+            <paso orden="5">Una vez que las verduras estén hervidas, apaga el fuego y tritúralas bien. Salpimienta al gusto. </paso>
+        </pasos>
+        <tiempo>30 minutos</tiempo>
+        <elaboracion>Cazuela</elaboracion>
+    </receta>
+    <receta>
+        <tipo definicion="ensalada"/>
+        <dificultad>Media</dificultad>
+        <nombre>Ensalada de pasta con alcachofas</nombre>
+        <ingredientes>
+            <ingrediente nombre="pasta corta" cantidad="300 gramos"/>
+            <ingrediente nombre="zanahorias" cantidad="2"/>
+            <ingrediente nombre="alcachofas" cantidad="2"/>
+            <ingrediente nombre="tomates cherry" cantidad="150 gramos"/>
+            <ingrediente nombre="queso fresco" cantidad="150 gramos"/>
+            <ingrediente nombre="albahaca" cantidad="al gusto"/>
+            <ingrediente nombre="nueces" cantidad="un puñadito"/>
+            <ingrediente nombre="Aceite y sal" cantidad="al gusto"/>
+        </ingredientes>
+        <calorias>350</calorias>
+        <pasos>
+            <paso orden="1">Corta las zanahorias en medias lunas y las alcachofas en octavos. </paso>
+            <paso orden="2">Disponlas en una bandeja con un chorrito de aceite y sal, y hornea a 180º durante 12 minutos.</paso>
+            <paso orden="3">Tritura la albahaca, las nueces, 80 ml de aceite de oliva y sal. </paso>
+            <paso orden="4">Cuece la pasta según indique el fabricante. Deja enfriar.</paso>
+            <paso orden="5">Mezcla la pasta con las verduras y agrega el queso. Aliña con la salsa tipo pesto.</paso>
+        </pasos>
+        <tiempo>40 minutos</tiempo>
+        <elaboracion>Cazuela y horno</elaboracion>
+    </receta>
+     <receta>
+        <tipo definicion="entrante"/>
+        <dificultad>Díficil</dificultad>
+        <nombre>Huevos al plato</nombre>
+        <ingredientes>
+            <ingrediente nombre="tomates maduros" cantidad="800 gramos"/>
+            <ingrediente nombre="cebolla" cantidad="1"/>
+            <ingrediente nombre="dientes de ajo" cantidad="2"/>
+            <ingrediente nombre="tomillo fresco" cantidad="2 ramitas"/>
+            <ingrediente nombre="azúcar" cantidad="1 cucharada"/>
+            <ingrediente nombre="queso fresco (para untar)" cantidad="200 gramos"/>
+            <ingrediente nombre="huevos" cantidad="4"/>
+            <ingrediente nombre="Aceite y sal" cantidad="al gusto"/>
+        </ingredientes>
+        <calorias>360</calorias>
+        <pasos>
+            <paso orden="1">Pica la cebolla y el ajo por separado. </paso>
+            <paso orden="2">Prepara una sartén con dos cucharadas de aceite. Ponla a calentar, echa la cebolla picada y rehógala durante 5 minutos hasta que esté transparente. Echa el ajo, también picado, y el tomillo, y rehoga durante 2 minutos más.</paso>
+            <paso orden="3">Trocea los tomates y échalos a la sartén. Para quitar su acidez, espolvorea una cucharada de azúcar y cuece durante 20 minutos a fuego lento.</paso>
+            <paso orden="4">Con una cuchara o un tenedor, retira el tomillo y tritura la mezcla con la batidora hasta obtener una salsa homogénea. Salpimienta y vierte la salsa en cuatro recipientes individuales para horno o en una fuente de horno.</paso>
+            <paso orden="5">Casca los huevos encima y hornear durante 10 minutos a 180 °C, hasta que los huevos cuajen.</paso>
+            <paso orden="6">Saca los recipientes del horno y distribuye el queso fresco por encima en pequeños montoncitos. Salpimienta los huevos y condimenta con un hilo de aceite de oliva. Finalmente, añade unas hojitas de tomillo fresco y servir enseguida para que no se enfríe.</paso>
+        </pasos>
+        <tiempo>50 minutos</tiempo>
+        <elaboracion>Sartén y horno</elaboracion>
+    </receta>
+     <receta>
+        <tipo definicion="pasta"/>
+        <dificultad>Media</dificultad>
+        <nombre>Lasaña de bacalao</nombre>
+        <ingredientes>
+            <ingrediente nombre="placas de lasaña precocidas" cantidad="16"/>
+            <ingrediente nombre="bacalao desalado" cantidad="600 gramos"/>
+            <ingrediente nombre="pan" cantidad="2 rebanadas"/>
+            <ingrediente nombre="ñoras" cantidad="4"/>
+            <ingrediente nombre="cebollas picadas" cantidad="2"/>
+            <ingrediente nombre="ajos picados" cantidad="3"/>
+            <ingrediente nombre="pimientos morrones de bote" cantidad="3"/>
+            <ingrediente nombre="besamel" cantidad="300 ml"/>
+            <ingrediente nombre="tomate frito" cantidad="350 gramos"/>
+            <ingrediente nombre="fumet" cantidad="500 ml"/>
+            <ingrediente nombre="queso rallado" cantidad="75 gramos"/>
+            <ingrediente nombre="harina" cantidad="50 gramos"/>
+            <ingrediente nombre="aceite" cantidad="al gusto"/>
+            <ingrediente nombre="sal" cantidad="al gusto"/>
+        </ingredientes>
+        <calorias>550</calorias>
+        <pasos>
+            <paso orden="1">Remoja las ñoras en agua 4 h y saca la pulpa. Escurre y corta los morrones en tiras.</paso>
+            <paso orden="2">Rehoga la cebolla, los ajos y el pan desmigado. Cuando se doren, añade los morrones, la pulpa de ñora y 250 gramos de salsa de tomate, y sofríe 2 minutos. Vierte el fumet, cuece 15 minutos y tritura.</paso>
+            <paso orden="3">Enharina el bacalao y dóralo en una sartén con aceite. Incorpóralo a la salsa anterior y dale un hervor.</paso>
+            <paso orden="4">Prepara las placas según indique el envase. Monta la lasaña en una bandeja apta para el horno alternado capas de pasta y de bacalao con su salsa.</paso>
+            <paso orden="5">Cubre con el tomate frito restante mezclado con la besamel, añade el queso y gratina.</paso>
+        </pasos>
+        <tiempo>1 hora</tiempo>
+        <elaboracion>Sartén y horno</elaboracion>
+    </receta>
+    <receta>
+        <tipo definicion="entrante"/>
+        <dificultad>Media</dificultad>
+        <nombre>Berenjenas rellenas</nombre>
+        <ingredientes>
+            <ingrediente nombre="berenjenas" cantidad="2"/>
+            <ingrediente nombre="pimiento rojo" cantidad="1"/>
+            <ingrediente nombre="pimiento amarillo" cantidad="1"/>
+            <ingrediente nombre="pimiento verde" cantidad="1"/>
+            <ingrediente nombre="calabacín" cantidad="1"/>
+            <ingrediente nombre="ceboleta" cantidad="1"/>
+            <ingrediente nombre="salsa de tomate" cantidad="100 ml"/>
+            <ingrediente nombre="huevos" cantidad="4"/>
+            <ingrediente nombre="queso rallado" cantidad="50 gramos"/>
+            <ingrediente nombre="aceite" cantidad="al gusto"/>
+            <ingrediente nombre="sal" cantidad="al gusto"/>
+        </ingredientes>
+        <calorias>300</calorias>
+        <pasos>
+            <paso orden="1">Despunta las berenjenas, lávalas y pártelas por la mitad a lo largo. </paso>
+            <paso orden="2">Vacíalas y cuécelas 5 min al vapor. Luego, ponlas bocabajo para que suelten el exceso de líquido.</paso>
+            <paso orden="3">Lava toda la verdura y córtala en dados junto con la pulpa de la berenjena.</paso>
+            <paso orden="4">Sofríe la cebolleta y los pimientos durante 10 minutos en una cazuela con 3 cucharadas de aceite.</paso>
+            <paso orden="5">Agrega a continuación la berenjena y el calabacín y deja cocer por 10 minutos más, removiendo de vez en cuando. </paso>
+            <paso orden="6">Sazona, incorpora la salsa de tomate, mezcla y retira del fuego.</paso>
+            <paso orden="7">Precalienta el horno a 200 °C. Rellena las medias berenjenas con las verduras y ponlas en una bandeja refractaria. </paso>
+            <paso orden="8">Casca un huevo sobre cada una y espolvoréalas con el queso. Hornéalas hasta que el huevo se cuaje y sírvelas enseguida.</paso>
+        </pasos>
+        <tiempo>45 minutos</tiempo>
+        <elaboracion>Sartén y horno</elaboracion>
+    </receta>
+    <receta>
+        <tipo definicion="entrante"/>
+        <dificultad>Fácil</dificultad>
+        <nombre>Rollitos de tortilla francesa</nombre>
+        <ingredientes>
+            <ingrediente nombre="huevos" cantidad="4"/>
+            <ingrediente nombre="jamón cocido en tacos" cantidad="100 gramos"/>
+            <ingrediente nombre="cebolla" cantidad="media"/>
+            <ingrediente nombre="zanahoria" cantidad="1"/>
+            <ingrediente nombre="ajo" cantidad="medio"/>
+            <ingrediente nombre="calabacín" cantidad="medio"/>
+            <ingrediente nombre="tomate" cantidad="medio"/>
+            <ingrediente nombre="cebollino picado" cantidad="5"/>
+            <ingrediente nombre="aceite" cantidad="al gusto"/>
+            <ingrediente nombre="sal" cantidad="al gusto"/>
+        </ingredientes>
+        <calorias>150</calorias>
+        <pasos>
+            <paso orden="1">Casca los huevos en un bol y bátelos. Añade la mitad del cebollino y reserva.</paso>
+            <paso orden="2">Pela la cebolla, raspa la zanahoria y lava el calabacín y el tomate. Corta todo, pela y pica el ajo muy pequeño.</paso>
+            <paso orden="3">Calienta una cucharada de aceite en una sartén y sofríe el ajo y todas las verduras durante 2 minutos.</paso>
+            <paso orden="4">Añade el jamón y rehoga dos minutos más. Vuelca en el bol de los huevos y mezcla.</paso>
+            <paso orden="5">En una sartén amplia con un hilo de aceite, vierte un poco de la masa y cuájala en forma de tortilla.</paso>
+            <paso orden="6">Una vez cuajada, enróllala a un lado de la sartén, añade más huevo, vuelve a dejar que cuaje y enrolla.</paso>
+            <paso orden="7">Repite hasta acabar todo el huevo batido y tengas una tortilla enrollada.</paso>
+        </pasos>
+        <tiempo>45 minutos</tiempo>
+        <elaboracion>Sartén</elaboracion>
+    </receta>
+    <receta>
+        <tipo definicion="principal"/>
+        <dificultad>Media</dificultad>
+        <nombre>Albondigas en salsa</nombre>
+        <ingredientes>
+            <ingrediente nombre="carne picada mixta (ternera y cerdo)" cantidad="500 gramos"/>
+            <ingrediente nombre="huevo" cantidad="1"/>
+            <ingrediente nombre="miga de pan seca" cantidad="50 gramos"/>
+            <ingrediente nombre="zanahoria en daditos" cantidad="2"/>
+            <ingrediente nombre="leche" cantidad="100 ml"/>
+            <ingrediente nombre="vino de jerez" cantidad="100 ml"/>
+            <ingrediente nombre="cebolla picada" cantidad="1"/>
+            <ingrediente nombre="diente de ajo picado" cantidad="1"/>
+            <ingrediente nombre="harina" cantidad="3 cucharadas"/>
+            <ingrediente nombre="pimienta" cantidad="al gusto"/>
+            <ingrediente nombre="aceite" cantidad="al gusto"/>
+            <ingrediente nombre="sal" cantidad="al gusto"/>
+        </ingredientes>
+        <calorias>400</calorias>
+        <pasos>
+            <paso orden="1">Mezcla la carne picada con la miga de pan remojada en leche, el ajo, el huevo, la pimienta y la sal.</paso>
+            <paso orden="2">Forma las albóndigas. Rebózalas en harina y fríelas en una sartén con aceite bien caliente, hasta que se doren.</paso>
+            <paso orden="3">Sofríe la cebolla hasta que esté blandita. </paso>
+            <paso orden="4">Añade las zanahorias y sofríe a fuego medio 10 minutos, y 5 minutos más a fuego fuerte para que la salsa tome un color oscuro.</paso>
+            <paso orden="5">Añade un vaso de vino para desglasar y agua y cuece un poco.</paso>
+            <paso orden="6">Cuela la salsa. Vuelve a ponerla en la cazuela, agrega las albóndigas y deja cocer 5 minutos para que cojan más sabor.</paso>
+        </pasos>
+        <tiempo>45 minutos</tiempo>
+        <elaboracion>Sartén</elaboracion>
+    </receta>
+    <receta>
+        <tipo definicion="principal"/>
+        <dificultad>Fácil</dificultad>
+        <nombre>Pollo asado con patatas</nombre>
+        <ingredientes>
+            <ingrediente nombre="pollo limpio" cantidad="1 entero"/>
+            <ingrediente nombre="patatas peladas" cantidad="8"/>
+            <ingrediente nombre="cerveza" cantidad="200 ml"/>
+            <ingrediente nombre="ajo picado" cantidad="2 dientes"/>
+            <ingrediente nombre="mantequilla" cantidad="80 gramos"/>
+            <ingrediente nombre="perejil fresco picado" cantidad="al gusto"/>
+            <ingrediente nombre="pimienta negra molida" cantidad="al gusto"/>
+            <ingrediente nombre="aceite" cantidad="al gusto"/>
+            <ingrediente nombre="sal" cantidad="al gusto"/>
+        </ingredientes>
+        <calorias>350</calorias>
+        <pasos>
+            <paso orden="1">Mezcla el perejil y los ajos con la mantequilla y reserva.</paso>
+            <paso orden="2">Corta el pollo a octavos y condiméntalo con sal y pimienta.</paso>
+            <paso orden="3">Dispón el pollo sobre la bandeja del horno forrada con un papel sulfurizado y úntalo bien con aceite de oliva.</paso>
+            <paso orden="4">Precalienta el horno a 190 °C. Marca rodajas en las patatas sin llegar a cortarlas del todo. Coloca las patatas en la misma bandeja que el pollo.</paso>
+            <paso orden="5">Salpimienta las patatas y úntalas con la mantequilla de ajo y perejil</paso>
+            <paso orden="6">Echa la cerveza en la bandeja y añade un chorrito de aceite de oliva.</paso>
+            <paso orden="7">Hornea el pollo durante 50 minutos hasta que el pollo esté bien cocido y las patatas doradas. Durante el horneado, riega varias veces el pollo y las patatas con el jugo de la propia cocción.</paso>
+            <paso orden="8">Retira la bandeja del horno y deja reposar el pollo unos minutos antes de servirlo.</paso>
+        </pasos>
+        <tiempo>1 hora y 15 minutos</tiempo>
+        <elaboracion>Horno</elaboracion>
+    </receta>
+    <receta>
+        <tipo definicion="principal"/>
+        <dificultad>Media</dificultad>
+        <nombre>Salmón en papillote con salsa de yogur</nombre>
+        <ingredientes>
+            <ingrediente nombre="supremas de salmón fresco" cantidad="4"/>
+            <ingrediente nombre="zanahoria rallada" cantidad="1"/>
+            <ingrediente nombre="cebolleta en juliana" cantidad="1"/>
+            <ingrediente nombre="pimientos veredes en juliana" cantidad="2"/>
+            <ingrediente nombre="diente de ajo picado" cantidad="1"/>
+            <ingrediente nombre="vino blanco" cantidad="4 cucharadas"/>
+            <ingrediente nombre="yogur" cantidad="1"/>
+            <ingrediente nombre="tomillo picado" cantidad="al gusto"/>
+            <ingrediente nombre="aceite" cantidad="al gusto"/>
+            <ingrediente nombre="sal" cantidad="al gusto"/>
+        </ingredientes>
+        <calorias>350</calorias>
+        <pasos>
+            <paso orden="1">Rehoga la zanahoria, la cebolleta y los pimientos 4 minutos. Añade el ajo y rehoga hasta que esté listo. </paso>
+            <paso orden="2">Precalienta el horno a 180º C. </paso>
+            <paso orden="3">Salpimienta las verduras y repártelas sobre 4 hojas de papel de horno. Coloca encima las supremas de salmón y salpimiéntalas también.</paso>
+            <paso orden="4">Espolvorea el tomillo y riega con el vino. Cierra cada paquete y ásalos 15 minutos.</paso>
+            <paso orden="5">Mientras, puedes ir haciendo la salsa. Bate el yogur con 1 cucharada de aceite, sal y pimienta.</paso>
+            <paso orden="6">Saca los paquetitos y ponlos directamente en los platos. Si los sirves enseguida advierte a los comensales que los abran con cuidado para no quemarse.</paso>
+        </pasos>
+        <tiempo>45 minutos</tiempo>
+        <elaboracion>Horno</elaboracion>
+    </receta>
+</recetas>

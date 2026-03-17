@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="CATALOGO">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="CD">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TITULO" type="xs:string" />
+                            <xs:element name="ARTISTA" type="xs:string" />
+                            <xs:element name="PAIS" type="xs:string" />
+                            <xs:element name="DISCOGRAFICA" type="xs:string" />
+                            <xs:element name="PRECIO" type="TPRECIO" maxOccurs="1" />
+                            <xs:element name="AÑO" type="xs:integer" />
+                            <xs:element name="CODIGO" type="TCODIGO" maxOccurs="1" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="TPRECIO">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="5" />
+            <xs:maxInclusive value="25" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TCODIGO">
+        <xs:restriction base="xs:string">
+            <xs:length value="6" />
+        </xs:restriction>
+    </xs:simpleType>
+
+
+</xs:schema>

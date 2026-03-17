@@ -1,0 +1,16 @@
+  table {
+    border: 1px solid black;
+    
+    color: black;
+  }
+
+  th {
+    background-color: chocolate;
+    border: 1px solid black;
+    text-align: center; 
+  }
+  td {
+    border: 1px solid black;
+    text-align: left;
+  }
+  
