@@ -1,16 +1,21 @@
   table {
     border: 1px solid black;
-    
+    box-shadow:
+      0 0 0 1px #724a28,
+      0 0 0 1.5px #ffffff,
+      0 0 0 2px #dfdb14,
+      0 0 0 2.5px #000000;
+
     color: black;
   }
 
   th {
     background-color: chocolate;
     border: 1px solid black;
-    text-align: center; 
+    text-align: center;
   }
+
   td {
     border: 1px solid black;
     text-align: left;
   }
-  

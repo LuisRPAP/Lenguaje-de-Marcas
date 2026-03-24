@@ -2,7 +2,7 @@
   <xsl:template match="/">
     <html>
       <head>
-        <link rel="stylesheet" type="text/css" href="practica9_1_1.css" />
+        <link rel="stylesheet" type="text/css" href="practica9_1_2_3.css" />
       </head>
       <body>
         <h2>Lista de Empleados</h2>
@@ -10,15 +10,19 @@
           <tr>
             <th>Piloto</th>
             <th>Escuderia</th>
+            <th>Nacionalidad</th>
           </tr>
           <xsl:for-each select="Pilotos/piloto">
-            
+            <xsl:sort select="Nacionalidad" />
             <tr>
               <td>
                 <xsl:value-of select="Nombre" />
               </td>
               <td>
                 <xsl:value-of select="Escuderia" />
+              </td>
+              <td>
+                <xsl:value-of select="Nacionalidad" />
               </td>
             </tr>
           </xsl:for-each>
