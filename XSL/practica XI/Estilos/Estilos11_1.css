@@ -1,0 +1,36 @@
+th{
+
+    background-color: orange;
+    text-align: center;
+    color: rgb(125, 54, 4);
+    font-style: verdana;
+}
+
+table{
+    margin: auto;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    color:rgb(125, 54, 4);
+    font-style: verdana;
+    
+}
+td,th {
+    border: 1px solid darkred;
+    
+}
+td{
+    font-size: 0.8em;
+}
+.dificultad,.elaboracion{
+    text-align: center;
+    color: darksalmon;
+}
+.nombre{
+ text-align: left;
+}
+.tiempo{
+    text-align: right;
+}

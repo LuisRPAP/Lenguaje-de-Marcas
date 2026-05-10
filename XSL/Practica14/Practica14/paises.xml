@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mundo>
+    <pais codigo="ES">
+        <nombre>España</nombre>
+        <capital>Madrid</capital>
+        <continente>Europa</continente>
+        <habitantes unidad="millones">48</habitantes>
+        <extension unidad="km2">505990</extension>
+        <moneda>Euro</moneda>
+    </pais>
+    
+    <pais codigo="FR">
+        <nombre>Francia</nombre>
+        <capital>París</capital>
+        <continente>Europa</continente>
+        <habitantes unidad="millones">65</habitantes>
+        <extension unidad="km2">643801</extension>
+        <moneda>Euro</moneda>
+    </pais>
+    
+    <pais codigo="DE">
+        <nombre>Alemania</nombre>
+        <capital>Berlín</capital>
+        <continente>Europa</continente>
+        <habitantes unidad="millones">84</habitantes>
+        <extension unidad="km2">357022</extension>
+        <moneda>Euro</moneda>
+    </pais>
+    
+    <pais codigo="IT">
+        <nombre>Italia</nombre>
+        <capital>Roma</capital>
+        <continente>Europa</continente>
+        <habitantes unidad="millones">59</habitantes>
+        <extension unidad="km2">301340</extension>
+        <moneda>Euro</moneda>
+    </pais>
+    
+    <pais codigo="US">
+        <nombre>Estados Unidos</nombre>
+        <capital>Washington D.C.</capital>
+        <continente>América</continente>
+        <habitantes unidad="millones">333</habitantes>
+        <extension unidad="km2">9833517</extension>
+        <moneda>Dólar</moneda>
+    </pais>
+    
+    <pais codigo="BR">
+        <nombre>Brasil</nombre>
+        <capital>Brasilia</capital>
+        <continente>América</continente>
+        <habitantes unidad="millones">203</habitantes>
+        <extension unidad="km2">8515767</extension>
+        <moneda>Real</moneda>
+    </pais>
+    
+    <pais codigo="AR">
+        <nombre>Argentina</nombre>
+        <capital>Buenos Aires</capital>
+        <continente>América</continente>
+        <habitantes unidad="millones">46</habitantes>
+        <extension unidad="km2">2780400</extension>
+        <moneda>Peso argentino</moneda>
+    </pais>
+    
+    <pais codigo="JP">
+        <nombre>Japón</nombre>
+        <capital>Tokio</capital>
+        <continente>Asia</continente>
+        <habitantes unidad="millones">125</habitantes>
+        <extension unidad="km2">377975</extension>
+        <moneda>Yen</moneda>
+    </pais>
+    
+    <pais codigo="CN">
+        <nombre>China</nombre>
+        <capital>Pekín</capital>
+        <continente>Asia</continente>
+        <habitantes unidad="millones">1410</habitantes>
+        <extension unidad="km2">9596961</extension>
+        <moneda>Yuan</moneda>
+    </pais>
+    
+    <pais codigo="AU">
+        <nombre>Australia</nombre>
+        <capital>Canberra</capital>
+        <continente>Oceanía</continente>
+        <habitantes unidad="millones">26</habitantes>
+        <extension unidad="km2">7692024</extension>
+        <moneda>Dólar australiano</moneda>
+    </pais>
+    
+    <pais codigo="CV">
+        <nombre>Ciudad del Vaticano</nombre>
+        <capital>Ciudad del Vaticano</capital>
+        <continente>Europa</continente>
+        <habitantes unidad="miles">0.764</habitantes>
+        <extension unidad="km2">0.44</extension>
+        <moneda>Euro</moneda>
+    </pais>
+</mundo>

@@ -2,7 +2,7 @@
   <xsl:template match="/">
     <html>
       <head>
-        <link rel="stylesheet" type="text/css" href="practica10_1.css" />
+        <link rel="stylesheet" type="text/css" href="Estilos/practica10_1.css" />
       </head>
       <body>
         <h2>Mi Biblioteca</h2>

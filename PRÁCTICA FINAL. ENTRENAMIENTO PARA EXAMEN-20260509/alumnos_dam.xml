@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="alumnos_dam.xsl" type="text/xsl"?>
+<clase>
+    <alumno sexo="masculino">
+        <nombre>Guillermo</nombre>
+        <apellidos>Aparisi Del Amo</apellidos>
+        <edad>43</edad>
+        <pueblo>Logroño</pueblo>
+    </alumno>
+    <alumno sexo="masculino">
+        <nombre>Alonso</nombre>
+        <apellidos>Balmaseda Fernández</apellidos>
+        <edad>20</edad>
+        <pueblo>Logroño</pueblo>
+    </alumno>
+    <alumno sexo="masculino">
+        <nombre>Sergio</nombre>
+        <apellidos>Cascante Arandia</apellidos>
+        <edad>19</edad>
+        <pueblo>Logroño</pueblo>
+    </alumno>
+    <alumno sexo="masculino">
+        <nombre>Constantín Eduard</nombre>
+        <apellidos>Davidov</apellidos>
+        <edad>21</edad>
+        <pueblo>Logroño</pueblo>
+    </alumno>
+    <alumno sexo="masculino">
+        <nombre>Pablo</nombre>
+        <apellidos>Gómez Vilar</apellidos>
+        <edad>22</edad>
+        <pueblo>Logroño</pueblo>
+    </alumno>
+    <alumno sexo="masculino">
+        <nombre>Antonio Gerardo</nombre>
+        <apellidos>Hurtado Morales</apellidos>
+        <edad>22</edad>
+        <pueblo>Logroño</pueblo>
+    </alumno>
+    <alumno sexo="masculino">
+        <nombre>Javier</nombre>
+        <apellidos>Lasaga Eguillor</apellidos>
+        <edad>21</edad>
+        <pueblo>Logroño</pueblo>
+    </alumno>
+    <alumno sexo="masculino">
+        <nombre>Valian</nombre>
+        <apellidos>López Flores</apellidos>
+        <edad>20</edad>
+        <pueblo>Logroño</pueblo>
+    </alumno>
+    <alumno sexo="masculino">
+        <nombre>Luis Fernando</nombre>
+        <apellidos>Rodríguez Palacios</apellidos>
+        <edad>56</edad>
+        <pueblo>Lardero</pueblo>
+    </alumno>
+    <alumno sexo="masculino">
+        <nombre>Pablo</nombre>
+        <apellidos>San Miguel Cortezón</apellidos>
+        <edad>21</edad>
+        <pueblo>Logroño</pueblo>
+    </alumno>
+    <alumno sexo="masculino">
+        <nombre>Maykol David</nombre>
+        <apellidos>Yugay Guamán</apellidos>
+        <edad>20</edad>
+        <pueblo>Logroño</pueblo>
+    </alumno>
+</clase>

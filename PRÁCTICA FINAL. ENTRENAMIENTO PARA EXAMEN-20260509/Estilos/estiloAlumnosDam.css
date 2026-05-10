@@ -1,0 +1,73 @@
+th {
+
+    background-color: orange;
+    text-align: center;
+    color: rgb(125, 54, 4);
+    font-style: verdana;
+    font-size: 120%;
+}
+
+table {
+    margin: auto;
+    border: 1px solid darkred;
+    border-collapse: collapse;
+}
+
+h1 {
+    margin: auto;
+    margin-bottom: 18px;
+    text-align: center;
+    color: darkred;
+    font-style: verdana;
+
+}
+
+p {
+    margin: auto;
+    margin-bottom: 28px;
+    text-align: center;
+    color: darkred;
+    font-style: verdana;
+    font-size: 1.5em;
+
+}
+
+
+th,
+td {
+    border: 2px solid darkred;
+    padding: 5px;
+    line-height: 1.4;
+
+}
+
+.nombre {
+    text-align: left;
+    color: darksalmon;
+
+}
+
+.sexo {
+    text-align: center;
+    color: blue;
+}
+
+.edadMayor {
+    text-align: right;
+    color: darkred;
+}
+
+.edadMenor {
+    text-align: right;
+    color: orange;
+}
+
+.logroño {
+    text-align: center;
+    color: darkgreen;
+}
+
+.otroPueblo {
+    text-align: center;
+    color: lightgreen;
+}
